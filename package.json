@@ -1,0 +1,19 @@
+{
+  "name": "resume-portfolio",
+  "version": "1.0.0",
+  "description": "Resume portfolio for Autumn Bullard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autumnchris/resume-portfolio.git"
+  },
+  "author": "Autumn Bullard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/autumnchris/resume-portfolio/issues"
+  },
+  "homepage": "https://github.com/autumnchris/resume-portfolio#readme"
+}
