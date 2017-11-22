@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 export default class App extends Component {
 
@@ -23,6 +24,23 @@ export default class App extends Component {
               </Nav>
           </Navbar.Collapse>
         </Navbar>
+        <main>
+          <ScrollableAnchor id={'about'}>
+            <section className="center-block">
+              <h2>About the Developer</h2>
+            </section>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'portfolio'}>
+            <section>
+              <h2>Some of My Work</h2>
+            </section>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'contact'}>
+            <section>
+              <h2>Contact Me</h2>
+            </section>
+          </ScrollableAnchor>
+        </main>
       </div>
     );
   }
