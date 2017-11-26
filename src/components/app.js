@@ -69,6 +69,7 @@ export default class App extends Component {
             </section>
           </ScrollableAnchor>
         </main>
+        <footer>Coded by <a href="../resume-portfolio" target="_self">Autumn Bullard</a></footer>
       </div>
     );
   }
