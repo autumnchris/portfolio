@@ -73,6 +73,23 @@ html {
           text-transform: lowercase;
         }
       }
+      section:first-child {
+        max-width: 1000px;
+        #avatar {
+          box-shadow: 1px 1px 10px #999;
+          margin-bottom: 20px;
+          width: 200px;
+        }
+        ul {
+          margin-bottom: 40px;
+          li #linkedin-icon:hover {
+            color: #0077b5;
+          }
+          li #github-icon:hover {
+            color: #6e5494;
+          }
+        }
+      }
       section:last-child {
         form {
           margin: auto;
