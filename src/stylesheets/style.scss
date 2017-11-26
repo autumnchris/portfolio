@@ -73,6 +73,33 @@ html {
           text-transform: lowercase;
         }
       }
+      section:last-child {
+        form {
+          margin: auto;
+          max-width: 400px;
+          label {
+            font-family: $heading-font;
+            text-transform: uppercase;
+          }
+          .form-control {
+            border-radius: 0;
+            margin-bottom: 20px;
+          }
+          .btn,
+          .btn:active,
+          .btn:focus {
+            background-color: $blue;
+            border: 2px solid $blue;
+            border-radius: 0;
+            color: $gray;
+            letter-spacing: 1px;
+          }
+          .btn:hover {
+            background: transparent;
+            color: $blue;
+          }
+        }
+      }
     }
   }
 }

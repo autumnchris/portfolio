@@ -55,6 +55,17 @@ export default class App extends Component {
           <ScrollableAnchor id={'contact'}>
             <section>
               <h2>Contact Me</h2>
+              <form>
+                <div className="form-group">
+                  <label>Name</label>
+                  <input type="" className="form-control" required />
+                  <label>Email</label>
+                  <input type="email" className="form-control" required />
+                  <label>Message</label>
+                  <textarea rows="10" className="form-control" required></textarea>
+                </div>
+                <button type="submit" className="btn">Send</button>
+              </form>
             </section>
           </ScrollableAnchor>
         </main>
