@@ -4,6 +4,23 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 
 export default class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      toggleClass: 'fa-bars'
+    };
+  }
+
+  toggleNavIcon() {
+
+    if (this.state.toggleClass === 'fa-bars') {
+      this.setState({ toggleClass: 'fa-times' });
+    }
+    else {
+      this.setState({ toggleClass: 'fa-bars' });
+    }
+  }
+
   render() {
     return (
       <div>
@@ -12,8 +29,8 @@ export default class App extends Component {
             <Navbar.Brand>
               <a href="/" target="_self"><h1>Autumn Bullard</h1></a>
             </Navbar.Brand>
-            <Navbar.Toggle>
-              <span className="fa fa-bars fa-2x"></span>
+            <Navbar.Toggle onClick={() => this.toggleNavIcon()}>
+              <span className={`fa ${this.state.toggleClass} fa-2x`}></span>
             </Navbar.Toggle>
           </Navbar.Header>
           <Navbar.Collapse>
