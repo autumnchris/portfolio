@@ -2,19 +2,26 @@ $heading-font: Armata, sans-serif;
 
 $blue: #006f8e;
 $white: #fff;
-$gray: #e6e6e6;
+$gray: #f2f2f2;
 
 html {
   box-sizing: border-box;
   height: 100%;
   body {
-    background-color: $white;
+    background-color: $gray;
     letter-spacing: 1px;
     min-height: 100%;
     padding-bottom: 30px;
     position: relative;
+    a,
+    a:visited,
+    a:hover,
+    a:active,
+    a:focus {
+      color: $blue;
+    }
     .navbar {
-      background-color: $blue;
+      background-color: $white;
       border: none;
       font-family: $heading-font;
       letter-spacing: 8px;
@@ -26,17 +33,17 @@ html {
         a:visited,
         a:active,
         a:focus {
-          color: $white;
+          border-bottom: 2px solid $white;
+          color: $blue;
           font-size: 1.4rem;
           padding-right: 8px;
           h1 {
             font-size: 1em;
-            margin: 3px;
+            margin: 3px 3px 1px;
           }
         }
         a:hover {
-          background-color: $white;
-          color: $blue;
+          border-bottom: 2px solid $blue;
         }
         .navbar-toggle,
         .navbar-toggle:hover,
@@ -44,7 +51,7 @@ html {
         .navbar-toggle:focus {
           background: transparent;
           border: none;
-          color: $white;
+          color: $blue;
           padding: 0;
         }
       }
@@ -52,9 +59,11 @@ html {
     main {
       margin-top: 40px;
       section {
-        padding: 50px 30px;
+        padding: 50px 10px;
         line-height: 20px;
+        margin-bottom: 30px;
         h2 {
+          color: $blue;
           font-family: $heading-font;
           font-weight: 800;
           letter-spacing: 6px;
@@ -63,9 +72,6 @@ html {
           margin-bottom: 48px;
           text-transform: lowercase;
         }
-      }
-      section:nth-child(even) {
-        background-color: $gray;
       }
     }
   }
