@@ -4,6 +4,7 @@
   "description": "Résumé portfolio for Autumn Bullard",
   "main": "index.js",
   "scripts": {
+    "build": "webpack -p",
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,12 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/autumnchris/resume-portfolio.git"
   },
-  "author": "Autumn Bullard",
+  "author": "autumnchris",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/autumnchris/resume-portfolio/issues"
   },
-  "homepage": "https://github.com/autumnchris/resume-portfolio#readme",
+  "homepage": "https://autumnchris.github.io/resume-portfolio",
   "dependencies": {
     "axios": "^0.17.1",
     "babel-core": "^6.26.0",
