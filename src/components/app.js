@@ -9,17 +9,17 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggleClass: 'fa-bars'
+      toggleClass: 'menu'
     };
   }
 
   toggleNavIcon() {
 
-    if (this.state.toggleClass === 'fa-bars') {
-      this.setState({ toggleClass: 'fa-times' });
+    if (this.state.toggleClass === 'menu') {
+      this.setState({ toggleClass: 'close' });
     }
     else {
-      this.setState({ toggleClass: 'fa-bars' });
+      this.setState({ toggleClass: 'menu' });
     }
   }
 
@@ -32,7 +32,7 @@ export default class App extends Component {
               <a href="/" target="_self"><h1>Autumn Bullard</h1></a>
             </Navbar.Brand>
             <Navbar.Toggle onClick={() => this.toggleNavIcon()}>
-              <span className={`fa ${this.state.toggleClass} fa-2x`}></span>
+              <span className="material-icons">{this.state.toggleClass}</span>
             </Navbar.Toggle>
           </Navbar.Header>
           <Navbar.Collapse>
