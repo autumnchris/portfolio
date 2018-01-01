@@ -53,6 +53,9 @@ html {
           border: none;
           color: $blue;
           padding: 0;
+          .material-icons {
+            font-size: 2.2em;
+          }
         }
       }
     }
@@ -86,7 +89,7 @@ html {
             color: #0077b5;
           }
           li #github-icon:hover {
-            color: #6e5494;
+            color: #333;
           }
         }
       }
