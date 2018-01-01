@@ -46,28 +46,30 @@ export default class App extends Component {
         <main>
           <ScrollableAnchor id={'about'}>
             <section className="center-block">
-              <h2>About the Developer</h2>
-              <div className="row">
-                <div className="col-sm-4">
-                  <img src={avatar} className="img-responsive img-circle center-block" alt="avatar image" id="avatar" />
-                  <ul className="list-inline text-center">
-                    <li>
-                      <a href="https://www.linkedin.com/in/autumncbullard" target="_blank" id="linkedin-icon">
-                        <span className="fa fa-linkedin-square fa-3x"></span>
-                        <span className="sr-only">LinkedIn profile</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/autumnchris" target="_blank" id="github-icon">
-                        <span className="fa fa-github fa-3x"></span>
-                        <span className="sr-only">GitHub profile</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-sm-8">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean est sem, dapibus nec volutpat sed, euismod in risus. Nullam nec nibh arcu. Phasellus dignissim sed lacus ut semper. Nulla efficitur ex vitae dignissim interdum. Aliquam cursus dapibus tortor, quis laoreet erat convallis vitae. Aliquam erat volutpat. Morbi sit amet magna finibus, rhoncus turpis sed, volutpat tellus.</p>
-                  <p>Duis non dui pellentesque, dignissim metus vitae, venenatis ex. Pellentesque ac ligula augue. Morbi cursus nibh libero, vel ullamcorper nisi ultricies molestie. Ut semper augue nibh, dignissim fermentum eros pretium sit amet. Duis iaculis tristique laoreet. Quisque malesuada eros a elit convallis, imperdiet feugiat felis pulvinar. Maecenas non vehicula ante. Nulla mattis turpis quis diam luctus facilisis. Aliquam vitae condimentum augue, non consectetur metus. Vestibulum non lobortis mi. Proin nec dui nec augue viverra vehicula. Phasellus feugiat fringilla scelerisque.</p>
+              <div className="container-fluid">
+                <h2>About the Developer</h2>
+                <div className="row">
+                  <div className="col-sm-4">
+                    <img src={avatar} className="img-responsive img-circle center-block" alt="avatar image" id="avatar" />
+                    <ul className="list-inline text-center">
+                      <li>
+                        <a href="https://www.linkedin.com/in/autumncbullard" target="_blank" id="linkedin-icon">
+                          <span className="fa fa-linkedin-square fa-3x"></span>
+                          <span className="sr-only">LinkedIn profile</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/autumnchris" target="_blank" id="github-icon">
+                          <span className="fa fa-github fa-3x"></span>
+                          <span className="sr-only">GitHub profile</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-sm-8">
+                    <p>I am a web developer based in Jacksonville Beach, Florida. I specialize in front-end and full-stack development. I prioritize accessibility and responsiveness in my markup and design. Producing clean and organized code is also of high importance to me. It's not enough for me just to make something work. It's important to understand what I have made. Does it work effectively? Can I easily apply this process to a future project? Have I considered every scenario?</p>
+                    <p>I am a student at <a href="https://www.freecodecamp.org/autumnchris" target="_blank">Free Code Camp</a> and am in the process of completing their curriculum for their Front End, Data Visualizaion, and Back End certificates. I have also recently begun working through the curriculum on <a href="https://www.theodinproject.com" target="_blank">The Odin Project.</a></p>
+                  </div>
                 </div>
               </div>
             </section>
@@ -79,18 +81,10 @@ export default class App extends Component {
           </ScrollableAnchor>
           <ScrollableAnchor id={'contact'}>
             <section>
-              <h2>Contact Me</h2>
-              <form>
-                <div className="form-group">
-                  <label>Name</label>
-                  <input type="" className="form-control" required />
-                  <label>Email</label>
-                  <input type="email" className="form-control" required />
-                  <label>Message</label>
-                  <textarea rows="10" className="form-control" required></textarea>
-                </div>
-                <button type="submit" className="btn">Send</button>
-              </form>
+              <div className="container-fluid">
+                <h2>Contact Me</h2>
+                <div className="alert alert-info text-center"><span className="fa fa-info-circle fa-lg fa-fw"></span> Contact form coming soon! For the time being, you can reach me at <a href="mailto:autumncbullard@gmail.com" className="alert-link" target="_self">autumncbullard@gmail.com</a>.</div>
+              </div>
             </section>
           </ScrollableAnchor>
         </main>
