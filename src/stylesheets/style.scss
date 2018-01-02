@@ -3,6 +3,8 @@ $heading-font: Armata, sans-serif;
 $blue: #006f8e;
 $white: #fff;
 $gray: #f2f2f2;
+$tablet-view: 768px;
+$desktop-view: 992px;
 
 html {
   box-sizing: border-box;
@@ -75,6 +77,18 @@ html {
           margin-bottom: 48px;
           text-transform: lowercase;
         }
+        h3 {
+          font-family: $heading-font;
+          font-size: 1.1em;
+          font-weight: 800;
+          line-height: 22px;
+          text-transform: uppercase;
+        }
+        h4 {
+          font-family: $heading-font;
+          font-size: 1.1em;
+          font-weight: 800;
+        }
       }
       section:first-child {
         max-width: 1000px;
@@ -90,6 +104,29 @@ html {
           }
           li #github-icon:hover {
             color: #333;
+          }
+        }
+      }
+      section:nth-child(2) {
+        max-width: 1200px;
+        .well {
+          background-color: $white;
+          border: none;
+          border-radius: 0;
+          height: 100%;
+          @media only screen and (min-width: $tablet-view) {
+            height: 400px;
+          }
+          @media only screen and (min-width: $desktop-view) {
+            height: 420px;
+          }
+          .icon {
+            color: $blue;
+            font-size: 6em;
+            margin: 30px 0;
+          }
+          p {
+            margin-bottom: 20px;
           }
         }
       }
