@@ -1,6 +1,11 @@
 import React from 'react';
+import Framework from './framework';
 
 const ProjectItem = ({ project }) => {
+
+  const Frameworks = project.frameworks.map((framework, index) => {
+    return <Framework key={index} framework={framework} />;
+  });
 
   return (
       <div className="col-sm-6 col-md-4">
@@ -10,6 +15,10 @@ const ProjectItem = ({ project }) => {
             <span className={`${project.icon} icon`}></span>
           </div>
           <p>{project.description}</p>
+          <h4>Frameworks</h4>
+          <table className="table table-condensed">
+            <tbody>{Frameworks}</tbody>
+          </table>
         </div>
       </div>
   );
