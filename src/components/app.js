@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Projects from './projects';
 import Portfolio from '.././db/portfolio.min.json';
 import axios from 'axios';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
@@ -84,8 +85,9 @@ export default class App extends Component {
             </section>
           </ScrollableAnchor>
           <ScrollableAnchor id={'portfolio'}>
-            <section>
+            <section className="center-block">
               <h2>Some of My Work</h2>
+              <Projects projects={this.state.portfolio} />
             </section>
           </ScrollableAnchor>
           <ScrollableAnchor id={'contact'}>
