@@ -1,5 +1,5 @@
 {
-  "name": "resume-portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "Résumé portfolio for Autumn Bullard",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/autumnchris/resume-portfolio.git"
+    "url": "git+https://github.com/autumnchris/portfolio.git"
   },
   "author": "autumnchris",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/autumnchris/resume-portfolio/issues"
+    "url": "https://github.com/autumnchris/portfolio/issues"
   },
-  "homepage": "https://autumnchris.github.io/resume-portfolio",
+  "homepage": "https://autumnchris.github.io/portfolio",
   "dependencies": {
     "axios": "^0.17.1",
     "babel-core": "^6.26.0",
