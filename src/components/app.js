@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Portfolio from '.././db/portfolio.min.json';
+import axios from 'axios';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
@@ -9,8 +11,15 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      portfolio: [],
       toggleClass: 'menu'
     };
+  }
+
+  componentDidMount() {
+    axios.get(Portfolio).then((portfolio) => {
+      this.setState({ portfolio: portfolio.data });
+    });
   }
 
   toggleNavIcon() {
