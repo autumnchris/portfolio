@@ -39,7 +39,7 @@ export default class App extends Component {
         <Navbar fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/" target="_self"><h1>Autumn Bullard</h1></a>
+              <a href="../portfolio" target="_self"><h1>Autumn Bullard</h1></a>
             </Navbar.Brand>
             <Navbar.Toggle onClick={() => this.toggleNavIcon()}>
               <span className="material-icons">{this.state.toggleClass}</span>
