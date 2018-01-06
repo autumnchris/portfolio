@@ -20,6 +20,8 @@ export default class App extends Component {
   componentDidMount() {
     axios.get(Portfolio).then((portfolio) => {
       this.setState({ portfolio: portfolio.data });
+    }).catch((error) => {
+      document.getElementById('error').style.display = 'block';
     });
   }
 
@@ -88,6 +90,7 @@ export default class App extends Component {
             <section className="center-block">
               <h2>Some of My Work</h2>
               <Projects projects={this.state.portfolio} />
+              <div className="alert alert-warning text-center" id="error"><span className="fa fa-warning fa-lg fa-fw"></span> Unable to load portfolio projects.</div>
             </section>
           </ScrollableAnchor>
           <ScrollableAnchor id={'contact'}>

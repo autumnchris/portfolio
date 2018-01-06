@@ -63,6 +63,10 @@ html {
     }
     main {
       margin-top: 40px;
+      .alert {
+        margin: auto;
+        max-width: 1000px;
+      }
       section {
         padding: 50px 10px;
         line-height: 20px;
@@ -131,6 +135,9 @@ html {
           .table {
             max-width: 300px;
           }
+        }
+        #error {
+          display: none;
         }
       }
     }
