@@ -1,7 +1,7 @@
 [
   {
     "title": "Local Weather App",
-    "description": "An app that uses HTML5 Geolocation and the DarkSky Weather API to get the user's current weather and forecast.",
+    "description": "An app that uses HTML5 Geolocation and the Dark Sky Weather API to get the user's current weather and forecast.",
     "icon": "fa fa-sun-o",
     "frameworks": [
       {
@@ -96,7 +96,7 @@
   {
     "title": "Random Quote Machine",
     "description": "An app that gets an array of quotes and randomly displays one to the page.",
-    "icon": "fa fa-quote-right",
+    "icon": "fa fa-quote-left",
     "frameworks": [
       {
         "name": "AngularJS",
