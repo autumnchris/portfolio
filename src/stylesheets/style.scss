@@ -153,13 +153,13 @@ html {
       right: 0;
       text-align: center;
       width: 100%;
-    }
-    footer a,
-    footer a:visited,
-    footer a:hover,
-    footer a:active,
-    footer a:focus {
-      color: $blue;
+      a,
+      a:visited,
+      :hover,
+      a:active,
+      a:focus {
+        color: $blue;
+      }
     }
   }
 }
