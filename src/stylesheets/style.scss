@@ -68,9 +68,8 @@ html {
         max-width: 1000px;
       }
       section {
-        padding: 50px 10px;
+        padding: 60px 10px 370px; // change the padding when you eventually add the contact form
         line-height: 20px;
-        margin-bottom: 30px;
         h2 {
           color: $blue;
           font-family: $heading-font;

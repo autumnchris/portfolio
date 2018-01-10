@@ -56,7 +56,7 @@ export default class App extends Component {
           </Navbar.Collapse>
         </Navbar>
         <main>
-          <ScrollableAnchor id={'about'}>
+          <ScrollableAnchor id="about">
             <section className="center-block">
               <div className="container-fluid">
                 <h2>About the Developer</h2>
@@ -86,14 +86,14 @@ export default class App extends Component {
               </div>
             </section>
           </ScrollableAnchor>
-          <ScrollableAnchor id={'portfolio'}>
+          <ScrollableAnchor id="portfolio">
             <section className="center-block">
               <h2>Some of My Work</h2>
               <Projects projects={this.state.portfolio} />
               <div className="alert alert-warning text-center" id="error"><span className="fa fa-warning fa-lg fa-fw"></span> Unable to load portfolio projects.</div>
             </section>
           </ScrollableAnchor>
-          <ScrollableAnchor id={'contact'}>
+          <ScrollableAnchor id="contact">
             <section>
               <div className="container-fluid">
                 <h2>Contact Me</h2>
