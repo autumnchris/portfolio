@@ -62,7 +62,7 @@ export default class App extends Component {
                 <h2>About the Developer</h2>
                 <div className="row">
                   <div className="col-sm-4">
-                    <img src={avatar} className="img-responsive img-circle center-block" alt="avatar image" id="avatar" />
+                    <img src={avatar} className="img-responsive img-circle center-block" alt="photo of Autumn Bullard" id="avatar" />
                     <ul className="list-inline text-center">
                       <li>
                         <a href="https://www.linkedin.com/in/autumncbullard" target="_blank" id="linkedin-icon">
@@ -79,7 +79,7 @@ export default class App extends Component {
                     </ul>
                   </div>
                   <div className="col-sm-8">
-                    <p>I am a web developer based in Jacksonville Beach, Florida. I specialize in front-end and full-stack development. I prioritize accessibility and responsiveness in my markup and design. Producing clean and organized code is also of high importance to me. It's not enough for me just to make something work. It's important to understand what I have made. Does it work effectively? Can I easily apply this process to a future project? Have I considered every scenario?</p>
+                    <p>I am a web developer based in Jacksonville Beach, Florida. I specialize in front-end development and am steadily working my way towards becoming a full-stack developer. I prioritize accessibility and responsiveness in my markup and design. Producing clean and organized code is also of high importance to me. It's not enough for me just to make something work. It's important to understand what I have made. Does it work effectively? Can I easily apply this process to a future project? Have I considered every scenario?</p>
                     <p>I am a student at <a href="https://www.freecodecamp.org/autumnchris" target="_blank">Free Code Camp</a> and am in the process of completing their curriculum for their Front End, Data Visualizaion, and Back End certificates. I have also recently begun working through the curriculum on <a href="https://www.theodinproject.com" target="_blank">The Odin Project.</a></p>
                   </div>
                 </div>
