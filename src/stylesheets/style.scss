@@ -3,6 +3,10 @@ $heading-font: Armata, sans-serif;
 $blue: #006f8e;
 $white: #fff;
 $gray: #f2f2f2;
+$box-shadow: #999;
+$linkedin: #0077b5;
+$github: #333;
+
 $tablet-view: 768px;
 $desktop-view: 992px;
 
@@ -68,7 +72,7 @@ html {
         max-width: 1000px;
       }
       section {
-        padding: 60px 10px 370px; // change the padding when you eventually add the contact form
+        padding: 60px 10px 370px; // change the padding when you add the contact form
         line-height: 20px;
         h2 {
           color: $blue;
@@ -96,17 +100,17 @@ html {
       section:first-child {
         max-width: 1000px;
         #avatar {
-          box-shadow: 1px 1px 10px #999;
+          box-shadow: 1px 1px 10px $box-shadow;
           margin-bottom: 20px;
           width: 200px;
         }
         ul {
           margin-bottom: 40px;
           li #linkedin-icon:hover {
-            color: #0077b5;
+            color: $linkedin;
           }
           li #github-icon:hover {
-            color: #333;
+            color: $github;
           }
         }
       }
@@ -152,13 +156,6 @@ html {
       right: 0;
       text-align: center;
       width: 100%;
-      a,
-      a:visited,
-      :hover,
-      a:active,
-      a:focus {
-        color: $blue;
-      }
     }
   }
 }
