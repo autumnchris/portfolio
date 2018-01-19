@@ -47,9 +47,9 @@ html {
             font-size: 1em;
             margin: 3px 3px 1px;
           }
-        }
-        a:hover {
-          border-bottom: 2px solid $blue;
+          &:hover {
+            border-bottom: 2px solid $blue;
+          }
         }
         .navbar-toggle,
         .navbar-toggle:hover,
@@ -96,51 +96,51 @@ html {
           font-size: 1.1em;
           font-weight: 800;
         }
-      }
-      section:first-child {
-        max-width: 1000px;
-        #avatar {
-          box-shadow: 1px 1px 10px $box-shadow;
-          margin-bottom: 20px;
-          width: 200px;
-        }
-        ul {
-          margin-bottom: 40px;
-          li #linkedin-icon:hover {
-            color: $linkedin;
-          }
-          li #github-icon:hover {
-            color: $github;
-          }
-        }
-      }
-      section:nth-child(2) {
-        max-width: 1200px;
-        .well {
-          background-color: $white;
-          border: none;
-          border-radius: 0;
-          height: 100%;
-          @media only screen and (min-width: $tablet-view) {
-            height: 400px;
-          }
-          @media only screen and (min-width: $desktop-view) {
-            height: 420px;
-          }
-          .icon {
-            color: $blue;
-            font-size: 6em;
-            margin: 30px 0;
-          }
-          p {
+        &:first-child {
+          max-width: 1000px;
+          #avatar {
+            box-shadow: 1px 1px 10px $box-shadow;
             margin-bottom: 20px;
+            width: 200px;
           }
-          .table {
-            max-width: 300px;
+          ul {
+            margin-bottom: 40px;
+            li #linkedin-icon:hover {
+              color: $linkedin;
+            }
+            li #github-icon:hover {
+              color: $github;
+            }
           }
         }
-        #error {
-          display: none;
+        &:nth-child(2) {
+          max-width: 1200px;
+          .well {
+            background-color: $white;
+            border: none;
+            border-radius: 0;
+            height: 100%;
+            @media only screen and (min-width: $tablet-view) {
+              height: 400px;
+            }
+            @media only screen and (min-width: $desktop-view) {
+              height: 420px;
+            }
+            .icon {
+              color: $blue;
+              font-size: 6em;
+              margin: 30px 0;
+            }
+            p {
+              margin-bottom: 20px;
+            }
+            .table {
+              max-width: 300px;
+            }
+          }
+          #error {
+            display: none;
+          }
         }
       }
     }
