@@ -10,8 +10,11 @@ $github: #333;
 $tablet-view: 768px;
 $desktop-view: 992px;
 
-html {
+* {
   box-sizing: border-box;
+}
+
+html {
   height: 100%;
   body {
     background-color: $gray;
