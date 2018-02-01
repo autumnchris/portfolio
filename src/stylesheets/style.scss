@@ -1,4 +1,9 @@
-$heading-font: Armata, sans-serif;
+@font-face {
+  font-family: Esphimere;
+  src: url(.././fonts/Esphimere.otf);
+}
+
+$heading-font: Armata, Esphimere, sans-serif;
 
 $blue: #006f8e;
 $white: #fff;
