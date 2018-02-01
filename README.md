@@ -12,7 +12,9 @@
 * [Babel](https://babeljs.io)
 * [Font Awesome](http://fontawesome.io)
 * [Google Material Icons](https://material.io/icons)
+* [react-scrollable-anchor](https://github.com/gabergg/react-scrollable-anchor)
 * [Google Fonts](https://fonts.google.com)
+* [Esphimere font](https://www.dafont.com/esphimere.font)
 
 ## Demo
 
