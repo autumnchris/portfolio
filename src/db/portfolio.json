@@ -41,6 +41,18 @@
     ]
   },
   {
+    "title": "Calculator",
+    "description": "An app that does arithmetic operations equivalent to a standard pocket calculator.",
+    "icon": "fa fa-calculator",
+    "frameworks": [
+      {
+        "name": "vanilla JS",
+        "demo": "../calculator",
+        "repo": "https://github.com/autumnchris/calculator"
+      }
+    ]
+  },
+  {
     "title": "Wikipedia Viewer",
     "description": "An app that takes a search input and gets a list of search results using the Media Wiki API.",
     "icon": "fa fa-wikipedia-w",
