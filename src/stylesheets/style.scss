@@ -144,6 +144,9 @@ html {
             }
             .table {
               max-width: 300px;
+              tbody tr td {
+                font-size: 1.3rem;
+              }
             }
           }
           #error {
