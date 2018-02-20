@@ -10,7 +10,7 @@
 * [axios](https://github.com/axios/axios)
 * [Bootstrap](https://getbootstrap.com)
 * [Babel](https://babeljs.io)
-* [Font Awesome](http://fontawesome.io)
+* [Font Awesome](https://fontawesome.com)
 * [Google Material Icons](https://material.io/icons)
 * [react-scrollable-anchor](https://github.com/gabergg/react-scrollable-anchor)
 * [Google Fonts](https://fonts.google.com)
