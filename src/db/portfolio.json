@@ -42,7 +42,7 @@
   },
   {
     "title": "Calculator",
-    "description": "An app that does arithmetic operations equivalent to a standard pocket calculator.",
+    "description": "An app that does arithmetic operations equivalent to a simple calculator.",
     "icon": "fa fa-calculator",
     "frameworks": [
       {
