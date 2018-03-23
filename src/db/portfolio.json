@@ -1,5 +1,17 @@
 [
   {
+    "title": "Pomodoro Timer",
+    "description": "An app that counts down using the pomodoro technique with customizable timer settings.",
+    "icon": "fa fa-clock-o",
+    "frameworks": [
+      {
+        "name": "vanilla JS",
+        "demo": "../pomodoro-timer",
+        "repo": "https://github.com/autumnchris/pomodoro-timer"
+      }
+    ]
+  },
+  {
     "title": "Local Weather App",
     "description": "An app that uses HTML5 Geolocation and the Dark Sky Weather API to get the user's current weather and forecast.",
     "icon": "fa fa-sun-o",
