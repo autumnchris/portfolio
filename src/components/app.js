@@ -65,13 +65,13 @@ export default class App extends Component {
                     <img src={avatar} className="img-responsive img-circle center-block" alt="photo of Autumn Bullard" id="avatar" />
                     <ul className="list-inline text-center">
                       <li>
-                        <a href="https://www.linkedin.com/in/autumncbullard" target="_blank" id="linkedin-icon">
+                        <a href="https://www.linkedin.com/in/autumncbullard" target="_blank" title="LinkedIn" id="linkedin-icon">
                           <span className="fa fa-linkedin-square fa-3x"></span>
                           <span className="sr-only">LinkedIn profile</span>
                         </a>
                       </li>
                       <li>
-                        <a href="https://github.com/autumnchris" target="_blank" id="github-icon">
+                        <a href="https://github.com/autumnchris" target="_blank" title="GitHub" id="github-icon">
                           <span className="fa fa-github fa-3x"></span>
                           <span className="sr-only">GitHub profile</span>
                         </a>
