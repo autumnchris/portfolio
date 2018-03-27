@@ -21,7 +21,7 @@ export default class App extends Component {
     axios.get(Portfolio).then((portfolio) => {
       this.setState({ portfolio: portfolio.data });
     }).catch((error) => {
-      document.getElementById('error').style.display = 'block';
+      document.querySelector('.error').style.display = 'block';;
     });
   }
 
@@ -41,7 +41,9 @@ export default class App extends Component {
         <Navbar fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="../portfolio" target="_self"><h1>Autumn Bullard</h1></a>
+              <a href="../portfolio" target="_self">
+                <h1>Autumn Bullard</h1>
+              </a>
             </Navbar.Brand>
             <Navbar.Toggle onClick={() => this.toggleNavIcon()}>
               <span className="material-icons">{this.state.toggleClass}</span>
@@ -62,16 +64,16 @@ export default class App extends Component {
                 <h2>About the Developer</h2>
                 <div className="row">
                   <div className="col-sm-4">
-                    <img src={avatar} className="img-responsive img-circle center-block" alt="photo of Autumn Bullard" id="avatar" />
+                    <img src={avatar} className="img-responsive img-circle center-block avatar" alt="photo of Autumn Bullard" />
                     <ul className="list-inline text-center">
                       <li>
-                        <a href="https://www.linkedin.com/in/autumncbullard" target="_blank" title="LinkedIn" id="linkedin-icon">
+                        <a href="https://www.linkedin.com/in/autumncbullard" target="_blank" className="linkedin-icon" title="LinkedIn">
                           <span className="fa fa-linkedin-square fa-3x"></span>
                           <span className="sr-only">LinkedIn profile</span>
                         </a>
                       </li>
                       <li>
-                        <a href="https://github.com/autumnchris" target="_blank" title="GitHub" id="github-icon">
+                        <a href="https://github.com/autumnchris" target="_blank" className="github-icon" title="GitHub">
                           <span className="fa fa-github fa-3x"></span>
                           <span className="sr-only">GitHub profile</span>
                         </a>
@@ -90,7 +92,7 @@ export default class App extends Component {
             <section className="center-block">
               <h2>Some of My Work</h2>
               <Projects projects={this.state.portfolio} />
-              <div className="alert alert-warning text-center" id="error"><span className="fa fa-warning fa-lg fa-fw"></span> Unable to load portfolio projects.</div>
+              <div className="alert alert-warning text-center error"><span className="fa fa-warning fa-lg fa-fw"></span> Unable to load portfolio projects.</div>
             </section>
           </ScrollableAnchor>
           <ScrollableAnchor id="contact">

@@ -107,17 +107,17 @@ html {
         }
         &:first-child {
           max-width: 1000px;
-          #avatar {
+          .avatar {
             box-shadow: 1px 1px 10px $box-shadow;
             margin-bottom: 20px;
             width: 200px;
           }
           ul {
             margin-bottom: 40px;
-            li #linkedin-icon:hover {
+            li .linkedin-icon:hover {
               color: $linkedin;
             }
-            li #github-icon:hover {
+            li .github-icon:hover {
               color: $github;
             }
           }
@@ -150,8 +150,35 @@ html {
               }
             }
           }
-          #error {
+          .error {
             display: none;
+          }
+        }
+        &:last-child {
+          form {
+            margin: auto;
+            max-width: 400px;
+            label {
+              font-family: $heading-font;
+              text-transform: uppercase;
+            }
+            .form-control {
+              border-radius: 0;
+              margin-bottom: 20px;
+            }
+            .btn,
+            .btn:active,
+            .btn:focus {
+              background-color: $blue;
+              border: 2px solid $blue;
+              border-radius: 0;
+              color: $gray;
+              letter-spacing: 1px;
+            }
+            .btn:hover {
+              background: transparent;
+              color: $blue;
+            }
           }
         }
       }
