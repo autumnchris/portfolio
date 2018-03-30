@@ -66,7 +66,7 @@
   },
   {
     "title": "Wikipedia Viewer",
-    "description": "An app that takes a search input and gets a list of search results using the Media Wiki API.",
+    "description": "An app that takes a search input and gets a list of Wikipedia search results using the Media Wiki API.",
     "icon": "fa fa-wikipedia-w",
     "frameworks": [
       {
