@@ -13,7 +13,6 @@ $linkedin: #0077b5;
 $github: #333;
 
 $tablet-view: 768px;
-$desktop-view: 992px;
 
 * {
   box-sizing: border-box;
@@ -130,9 +129,6 @@ html {
             border-radius: 0;
             height: 100%;
             @media only screen and (min-width: $tablet-view) {
-              height: 400px;
-            }
-            @media only screen and (min-width: $desktop-view) {
               height: 420px;
             }
             .icon {
