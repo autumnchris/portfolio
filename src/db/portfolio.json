@@ -78,6 +78,11 @@
         "name": "jQuery",
         "demo": "../wikipedia-viewer-jquery",
         "repo": "https://github.com/autumnchris/wikipedia-viewer-jquery"
+      },
+      {
+        "name": "React",
+        "demo": "../wikipedia-viewer-react",
+        "repo": "https://github.com/autumnchris/wikipedia-viewer-react"
       }
     ]
   },
