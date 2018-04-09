@@ -21,7 +21,8 @@ $tablet-view: 768px;
 html {
   height: 100%;
   body {
-    background-color: $gray;
+    background: $gray;
+    background: linear-gradient(to right, #e6e6e6, $gray) fixed;
     letter-spacing: 1px;
     min-height: 100%;
     padding-bottom: 30px;
@@ -163,17 +164,18 @@ html {
               margin-bottom: 20px;
             }
             .btn,
+            .btn:hover,
             .btn:active,
             .btn:focus {
               background-color: $blue;
-              border: 2px solid $blue;
               border-radius: 0;
               color: $gray;
               letter-spacing: 1px;
             }
-            .btn:hover {
-              background: transparent;
-              color: $blue;
+            .success .alert,
+            .error .alert {
+              display: none;
+              margin-top: 20px;
             }
           }
         }
