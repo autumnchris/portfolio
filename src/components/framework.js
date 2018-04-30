@@ -6,7 +6,7 @@ const Framework = ({ framework }) => {
     <tr>
       <td>{framework.name}</td>
       <td>
-        <a href={framework.repo} target="_blank">source code</a>
+        <a href={framework.sourceCode} target="_blank">source code</a>
       </td>
       <td>
         <a href={framework.demo} target="_blank">demo</a>

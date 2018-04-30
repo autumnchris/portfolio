@@ -18,9 +18,9 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    axios.get(Portfolio).then((portfolio) => {
+    axios.get(Portfolio).then(portfolio => {
       this.setState({ portfolio: portfolio.data });
-    }).catch((error) => {
+    }).catch(error => {
       document.querySelector('.error').style.display = 'block';;
     });
   }
@@ -37,7 +37,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="body">
         <Navbar fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
