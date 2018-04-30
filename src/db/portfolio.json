@@ -7,7 +7,7 @@
       {
         "name": "vanilla JS",
         "demo": "../pomodoro-timer",
-        "repo": "https://github.com/autumnchris/pomodoro-timer"
+        "sourceCode": "https://github.com/autumnchris/pomodoro-timer"
       }
     ]
   },
@@ -19,12 +19,12 @@
       {
         "name": "AngularJS",
         "demo": "../local-weather-app-angularjs",
-        "repo": "https://github.com/autumnchris/local-weather-app-angularjs"
+        "sourceCode": "https://github.com/autumnchris/local-weather-app-angularjs"
       },
       {
         "name": "jQuery",
         "demo": "../local-weather-app-jquery",
-        "repo": "https://github.com/autumnchris/local-weather-app-jquery"
+        "sourceCode": "https://github.com/autumnchris/local-weather-app-jquery"
       }
     ]
   },
@@ -36,7 +36,7 @@
       {
         "name": "Express.js",
         "demo": "https://autumnchris-header-parser-api.herokuapp.com",
-        "repo": "https://github.com/autumnchris/header-parser-api"
+        "sourceCode": "https://github.com/autumnchris/header-parser-api"
       }
     ]
   },
@@ -48,19 +48,31 @@
       {
         "name": "React",
         "demo": "../markdown-previewer",
-        "repo": "https://github.com/autumnchris/markdown-previewer"
+        "sourceCode": "https://github.com/autumnchris/markdown-previewer"
       }
     ]
   },
   {
     "title": "Calculator",
-    "description": "An app that does arithmetic operations equivalent to a simple calculator.",
+    "description": "An app that does arithmetic operations equivalent to a simple calculator. Includes keyboard functionality.",
     "icon": "fa fa-calculator",
     "frameworks": [
       {
         "name": "vanilla JS",
         "demo": "../calculator",
-        "repo": "https://github.com/autumnchris/calculator"
+        "sourceCode": "https://github.com/autumnchris/calculator"
+      }
+    ]
+  },
+  {
+    "title": "Reading List",
+    "description": "An app that uses LocalStorage and an object constructor to store and present data for the user's personal reading list.",
+    "icon": "fa fa-book",
+    "frameworks": [
+      {
+        "name": "vanilla JS",
+        "demo": "../reading-list",
+        "sourceCode": "https://github.com/autumnchris/reading-list"
       }
     ]
   },
@@ -72,17 +84,17 @@
       {
         "name": "AngularJS",
         "demo": "../wikipedia-viewer-angularjs",
-        "repo": "https://github.com/autumnchris/wikipedia-viewer-angularjs"
+        "sourceCode": "https://github.com/autumnchris/wikipedia-viewer-angularjs"
       },
       {
         "name": "jQuery",
         "demo": "../wikipedia-viewer-jquery",
-        "repo": "https://github.com/autumnchris/wikipedia-viewer-jquery"
+        "sourceCode": "https://github.com/autumnchris/wikipedia-viewer-jquery"
       },
       {
         "name": "React",
         "demo": "../wikipedia-viewer-react",
-        "repo": "https://github.com/autumnchris/wikipedia-viewer-react"
+        "sourceCode": "https://github.com/autumnchris/wikipedia-viewer-react"
       }
     ]
   },
@@ -94,7 +106,7 @@
       {
         "name": "React",
         "demo": "../freecodecamp-leaderboard",
-        "repo": "https://github.com/autumnchris/freecodecamp-leaderboard"
+        "sourceCode": "https://github.com/autumnchris/freecodecamp-leaderboard"
       }
     ]
   },
@@ -106,7 +118,7 @@
       {
         "name": "Express.js",
         "demo": "https://autumnchris-timestamp-api.herokuapp.com",
-        "repo": "https://github.com/autumnchris/timestamp-api"
+        "sourceCode": "https://github.com/autumnchris/timestamp-api"
       }
     ]
   },
@@ -118,7 +130,7 @@
       {
         "name": "jQuery",
         "demo": "../twitch-app",
-        "repo": "https://github.com/autumnchris/twitch-app"
+        "sourceCode": "https://github.com/autumnchris/twitch-app"
       }
     ]
   },
@@ -130,17 +142,17 @@
       {
         "name": "AngularJS",
         "demo": "../random-quote-machine-angularjs",
-        "repo": "https://github.com/autumnchris/random-quote-machine-angularjs"
+        "sourceCode": "https://github.com/autumnchris/random-quote-machine-angularjs"
       },
       {
         "name": "jQuery",
         "demo": "../random-quote-machine-jquery",
-        "repo": "https://github.com/autumnchris/random-quote-machine-jquery"
+        "sourceCode": "https://github.com/autumnchris/random-quote-machine-jquery"
       },
       {
         "name": "React",
         "demo": "../random-quote-machine-react",
-        "repo": "https://github.com/autumnchris/random-quote-machine-react"
+        "sourceCode": "https://github.com/autumnchris/random-quote-machine-react"
       }
     ]
   },
@@ -152,7 +164,7 @@
       {
         "name": "jQuery",
         "demo": "../roman-numeral-converter",
-        "repo": "https://github.com/autumnchris/roman-numeral-converter"
+        "sourceCode": "https://github.com/autumnchris/roman-numeral-converter"
       }
     ]
   }
