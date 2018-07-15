@@ -74,14 +74,14 @@ html {
       }
     }
     main {
-      margin-top: 40px;
+      //margin-top: 40px;
       .alert {
         margin: auto;
         max-width: 1000px;
       }
       section {
         line-height: 20px;
-        margin-bottom: 280px;
+        min-height: 100vh;
         padding: 60px 10px 0;
         h2 {
           color: $blue;
