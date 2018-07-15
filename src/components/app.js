@@ -41,7 +41,7 @@ export default class App extends Component {
         <Navbar fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="../portfolio" target="_self">
+              <a href="/" target="_self">
                 <h1>Autumn Bullard</h1>
               </a>
             </Navbar.Brand>
@@ -81,8 +81,13 @@ export default class App extends Component {
                     </ul>
                   </div>
                   <div className="col-sm-8">
-                    <p>I am a web developer based in Jacksonville Beach, Florida. I specialize in front-end development and am steadily working my way towards becoming a full-stack developer. I prioritize accessibility and responsiveness in my markup and design. Producing clean and organized code is also of high importance to me. It's not enough for me just to make something work. It's important to understand what I have made. Does it work effectively? Can I easily apply this process to a future project? Have I considered every scenario?</p>
-                    <p>I am a student at <a href="https://www.freecodecamp.org/autumnchris" target="_blank">Free Code Camp</a> and am in the process of completing their curriculum for their Front End, Data Visualizaion, and Back End certificates. I have also recently begun working through the curriculum on <a href="https://www.theodinproject.com" target="_blank">The Odin Project.</a></p>
+                    <p>I am a front-end web developer based in Jacksonville Beach, Florida. I prioritize accessibility and responsiveness in my markup and design. Producing clean and organized code is also of high importance to me. It's not enough for me just to make something work. It's important to understand what I have made. Does it work effectively? Can I easily apply this process to a future project? Have I considered every scenario?</p>
+                    <p>I am currently in the process of working through the curriculum on <a href="https://www.freecodecamp.org/autumnchris" target="_blank">freeCodeCamp</a> and <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a>.</p>
+                    <h3>Earned Certifications:</h3>
+                    <ul>
+                      <li><a href="https://www.freecodecamp.org/certification/autumnchris/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms and Data Structures</a> from freeCodeCamp</li>
+                      <li><a href="https://www.coursera.org/account/accomplishments/specialization/NTKX2VYA96UD" target="_blank">Web Design for Everybody (Basics of Web Development and Coding)</a> from Coursera and the University of Michigan</li>
+                    </ul>
                   </div>
                 </div>
               </div>
