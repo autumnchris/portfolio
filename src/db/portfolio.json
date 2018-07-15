@@ -99,18 +99,6 @@
     ]
   },
   {
-    "title": "Free Code Camp Leaderboard",
-    "description": "An app that gets the top 100 Free Code Camp users over the past 30 days and all-time.",
-    "icon": "fa fa-free-code-camp",
-    "frameworks": [
-      {
-        "name": "React",
-        "demo": "../freecodecamp-leaderboard",
-        "sourceCode": "https://github.com/autumnchris/freecodecamp-leaderboard"
-      }
-    ]
-  },
-  {
     "title": "Timestamp API",
     "description": "An API that takes a unix timestamp or a natural language date and gets both the timestamp and the date in JSON format.",
     "icon": "fa fa-calendar",
@@ -119,18 +107,6 @@
         "name": "Express.js",
         "demo": "https://autumnchris-timestamp-api.herokuapp.com",
         "sourceCode": "https://github.com/autumnchris/timestamp-api"
-      }
-    ]
-  },
-  {
-    "title": "Twitch App",
-    "description": "An app that takes an array of Twitch.tv channels and displays which channels are streaming and which are offline.",
-    "icon": "fa fa-twitch",
-    "frameworks": [
-      {
-        "name": "jQuery",
-        "demo": "../twitch-app",
-        "sourceCode": "https://github.com/autumnchris/twitch-app"
       }
     ]
   },
@@ -145,14 +121,14 @@
         "sourceCode": "https://github.com/autumnchris/random-quote-machine-angularjs"
       },
       {
-        "name": "jQuery",
-        "demo": "../random-quote-machine-jquery",
-        "sourceCode": "https://github.com/autumnchris/random-quote-machine-jquery"
-      },
-      {
         "name": "React",
         "demo": "../random-quote-machine-react",
         "sourceCode": "https://github.com/autumnchris/random-quote-machine-react"
+      },
+      {
+        "name": "vanilla JS",
+        "demo": "../random-quote-machine-jquery",
+        "sourceCode": "https://github.com/autumnchris/random-quote-machine-vanilla-js"
       }
     ]
   },
