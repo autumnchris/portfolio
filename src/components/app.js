@@ -83,9 +83,10 @@ export default class App extends Component {
                   <div className="col-sm-8">
                     <p>I am a front-end web developer based in Jacksonville Beach, Florida. I prioritize accessibility and responsiveness in my markup and design. Producing clean and organized code is also of high importance to me. It's not enough for me just to make something work. It's important to understand what I have made. Does it work effectively? Can I easily apply this process to a future project? Have I considered every scenario?</p>
                     <p>I am currently in the process of working through the curriculum on <a href="https://www.freecodecamp.org/autumnchris" target="_blank">freeCodeCamp</a> and <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a>.</p>
-                    <h3>Earned Certifications:</h3>
+                    <h3>Certifications:</h3>
                     <ul>
                       <li><a href="https://www.freecodecamp.org/certification/autumnchris/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms and Data Structures</a> from freeCodeCamp</li>
+                      <li><a href="https://www.freecodecamp.org/certification/autumnchris/responsive-web-design" target="_blank">Responsive Web Design</a> from freeCodeCamp</li>
                       <li><a href="https://www.coursera.org/account/accomplishments/specialization/NTKX2VYA96UD" target="_blank">Web Design for Everybody (Basics of Web Development and Coding)</a> from Coursera and the University of Michigan</li>
                     </ul>
                   </div>
