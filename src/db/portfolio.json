@@ -29,6 +29,18 @@
     ]
   },
   {
+    "title": "Drum Machine",
+    "description": "An app that simulates sounds from a drum kit using either the keyboard or the mouse.",
+    "icon": "fa fa-music",
+    "frameworks": [
+      {
+        "name": "React",
+        "demo": "../drum-machine",
+        "sourceCode": "https://github.com/autumnchris/drum-machine"
+      }
+    ]
+  },
+  {
     "title": "Header Parser API",
     "description": "An API that gets your browser's IP address, language, and operating system in JSON format.",
     "icon": "fa fa-server",
@@ -37,18 +49,6 @@
         "name": "Express.js",
         "demo": "https://autumnchris-header-parser-api.herokuapp.com",
         "sourceCode": "https://github.com/autumnchris/header-parser-api"
-      }
-    ]
-  },
-  {
-    "title": "Markdown Previewer",
-    "description": "An app that takes Markdown code and outputs a preview as you type.",
-    "icon": "fa fa-file-code-o",
-    "frameworks": [
-      {
-        "name": "React",
-        "demo": "../markdown-previewer",
-        "sourceCode": "https://github.com/autumnchris/markdown-previewer"
       }
     ]
   },
@@ -73,6 +73,18 @@
         "name": "vanilla JS",
         "demo": "../reading-list",
         "sourceCode": "https://github.com/autumnchris/reading-list"
+      }
+    ]
+  },
+  {
+    "title": "Markdown Previewer",
+    "description": "An app that takes Markdown code and outputs a preview as you type.",
+    "icon": "fa fa-file-code-o",
+    "frameworks": [
+      {
+        "name": "React",
+        "demo": "../markdown-previewer",
+        "sourceCode": "https://github.com/autumnchris/markdown-previewer"
       }
     ]
   },
