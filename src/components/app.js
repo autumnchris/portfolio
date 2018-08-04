@@ -13,7 +13,8 @@ export default class App extends Component {
     super(props);
     this.state = {
       portfolio: [],
-      toggleClass: 'menu'
+      toggleClass: 'menu',
+      errorStyle: {display: 'none'}
     };
   }
 
@@ -21,7 +22,9 @@ export default class App extends Component {
     axios.get(Portfolio).then(portfolio => {
       this.setState({ portfolio: portfolio.data });
     }).catch(error => {
-      document.querySelector('.error').style.display = 'block';;
+      this.setState({
+        errorStyle: {display: 'block'}
+      });
     });
   }
 
@@ -98,7 +101,7 @@ export default class App extends Component {
             <section className="center-block">
               <h2>Some of My Work</h2>
               <Projects projects={this.state.portfolio} />
-              <div className="alert alert-warning text-center error"><span className="fa fa-warning fa-lg fa-fw"></span> Unable to load portfolio projects.</div>
+              <div className="alert alert-warning text-center error" style={this.state.errorStyle}><span className="fa fa-warning fa-lg fa-fw"></span> Unable to load portfolio projects.</div>
             </section>
           </ScrollableAnchor>
           <ScrollableAnchor id="contact">

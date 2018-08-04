@@ -147,9 +147,6 @@ html {
               }
             }
           }
-          .error {
-            display: none;
-          }
         }
         &:last-child {
           form {
@@ -174,7 +171,7 @@ html {
             }
             .success .alert,
             .error .alert {
-              display: none;
+              //display: none;
               margin-top: 20px;
             }
           }
