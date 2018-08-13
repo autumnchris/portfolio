@@ -144,7 +144,7 @@
       },
       {
         "name": "vanilla JS",
-        "demo": "../random-quote-machine-jquery",
+        "demo": "../random-quote-machine-vanilla-js",
         "sourceCode": "https://github.com/autumnchris/random-quote-machine-vanilla-js"
       }
     ]
