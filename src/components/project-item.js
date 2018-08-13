@@ -8,19 +8,17 @@ const ProjectItem = ({ project }) => {
   });
 
   return (
-      <div className="col-sm-6 col-md-4">
-        <div className="well">
-          <h3 className="text-center">{project.title}</h3>
-          <div className="text-center">
-            <span className={`${project.icon} icon`}></span>
-          </div>
-          <p>{project.description}</p>
-          <h4>Frameworks</h4>
-          <table className="table table-condensed">
-            <tbody>{Frameworks}</tbody>
-          </table>
-        </div>
+    <div className="card">
+      <h3>{project.title}</h3>
+      <div className="icon">
+        <span className={project.icon}></span>
       </div>
+      <p>{project.description}</p>
+      <h4>Frameworks</h4>
+      <table>
+        <tbody>{Frameworks}</tbody>
+      </table>
+    </div>
   );
 }
 

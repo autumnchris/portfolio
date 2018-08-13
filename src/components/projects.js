@@ -8,7 +8,7 @@ const Projects = ({ projects }) => {
   });
 
   return (
-    <div className="row center-block">{ProjectItems}</div>
+    <div className="content">{ProjectItems}</div>
   );
 }
 

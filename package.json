@@ -29,7 +29,6 @@
     "file-loader": "^1.1.11",
     "node-sass": "^4.9.0",
     "react": "^16.4.2",
-    "react-bootstrap": "^0.31.5",
     "react-dom": "^16.4.2",
     "react-scrollable-anchor": "^0.6.1",
     "sass-loader": "^5.0.1",
