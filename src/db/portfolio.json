@@ -2,7 +2,7 @@
   {
     "title": "Pomodoro Timer",
     "description": "An app that counts down using the pomodoro technique with customizable timer settings.",
-    "icon": "fa fa-clock-o",
+    "icon": "far fa-clock",
     "frameworks": [
       {
         "name": "vanilla JS",
@@ -14,7 +14,7 @@
   {
     "title": "Local Weather App",
     "description": "An app that uses HTML5 Geolocation and the Dark Sky Weather API to get the user's current weather and forecast.",
-    "icon": "fa fa-sun-o",
+    "icon": "fas fa-moon",
     "frameworks": [
       {
         "name": "AngularJS",
@@ -25,6 +25,11 @@
         "name": "jQuery",
         "demo": "../local-weather-app-jquery",
         "sourceCode": "https://github.com/autumnchris/local-weather-app-jquery"
+      },
+      {
+        "name": "React",
+        "demo": "../local-weather-app-react",
+        "sourceCode": "https://github.com/autumnchris/local-weather-app-react"
       }
     ]
   },
@@ -79,7 +84,7 @@
   {
     "title": "Markdown Previewer",
     "description": "An app that takes Markdown code and outputs a preview as you type.",
-    "icon": "fa fa-file-code-o",
+    "icon": "fab fa-markdown",
     "frameworks": [
       {
         "name": "React",
@@ -91,7 +96,7 @@
   {
     "title": "Wikipedia Viewer",
     "description": "An app that takes a search input and gets a list of Wikipedia search results using the Media Wiki API.",
-    "icon": "fa fa-wikipedia-w",
+    "icon": "fab fa-wikipedia-w",
     "frameworks": [
       {
         "name": "AngularJS",
@@ -113,7 +118,7 @@
   {
     "title": "Timestamp API",
     "description": "An API that takes a unix timestamp or a natural language date and gets both the timestamp and the date in JSON format.",
-    "icon": "fa fa-calendar",
+    "icon": "far fa-calendar-alt",
     "frameworks": [
       {
         "name": "Express.js",
