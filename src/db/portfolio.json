@@ -63,9 +63,14 @@
     "icon": "fa fa-calculator",
     "frameworks": [
       {
+        "name": "React",
+        "demo": "../calculator-react",
+        "sourceCode": "https://github.com/autumnchris/calculator-react"
+      },
+      {
         "name": "vanilla JS",
-        "demo": "../calculator",
-        "sourceCode": "https://github.com/autumnchris/calculator"
+        "demo": "../calculator-vanilla-js",
+        "sourceCode": "https://github.com/autumnchris/calculator-vanilla-js"
       }
     ]
   },
