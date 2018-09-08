@@ -5,9 +5,14 @@
     "icon": "far fa-clock",
     "frameworks": [
       {
+        "name": "React",
+        "demo": "../pomodoro-timer-react",
+        "sourceCode": "https://github.com/autumnchris/pomodoro-timer-react"
+      },
+      {
         "name": "vanilla JS",
-        "demo": "../pomodoro-timer",
-        "sourceCode": "https://github.com/autumnchris/pomodoro-timer"
+        "demo": "../pomodoro-timer-vanilla-js",
+        "sourceCode": "https://github.com/autumnchris/pomodoro-timer-vanilla-js"
       }
     ]
   },
