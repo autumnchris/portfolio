@@ -83,7 +83,12 @@ input[type=submit]:focus {
 
 ol,
 ul {
-	list-style: none;
+  list-style: none;
+}
+
+li {
+  color: inherit;
+  letter-spacing: inherit;
 }
 
 table {
