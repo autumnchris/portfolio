@@ -2,10 +2,10 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Résumé portfolio for Autumn Bullard",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "webpack -p",
-    "start": "webpack-dev-server",
+    "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,21 +20,24 @@
   "homepage": "https://autumnchris.github.io/portfolio",
   "dependencies": {
     "axios": "^0.17.1",
-    "babel-core": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^2.0.0",
+    "express": "^4.16.4",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.9.4",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scrollable-anchor": "^0.6.1",
-    "sass-loader": "^5.0.1",
+    "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
-    "url-loader": "^0.5.9",
-    "webpack": "^2.7.0",
-    "webpack-dev-server": "^2.9.4"
+    "url-loader": "^1.1.2",
+    "webpack": "^3.1.0",
+    "webpack-dev-middleware": "^2.0.4",
+    "webpack-dev-server": "^2.9.4",
+    "webpack-hot-middleware": "^2.24.2"
   }
 }
