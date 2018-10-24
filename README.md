@@ -6,7 +6,9 @@
 * [React](https://reactjs.org)
 * [Sass](http://sass-lang.com)
 * [Webpack](https://webpack.js.org)
-* JSON
+* [Express.js](https://expressjs.com)
+* [Mongoose](https://mongoosejs.com)
+* [MongoDB](https://www.mongodb.com)
 * [axios](https://github.com/axios/axios)
 * [Babel](https://babeljs.io)
 * [Font Awesome](https://fontawesome.com)
