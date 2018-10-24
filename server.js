@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const webpack = require('webpack');
 const config = require('./webpack.config.js');
+const Project = require('./models/project.js');
 
 const app = express();
 const compiler = webpack(config);
@@ -21,5 +22,13 @@ app.get('/', (req, res) => {
 });
 
 app.use(express.static(`${__dirname}/public`));
+
+app.get('/api', (req, res) => {
+  Project.find({}, 'title description icon frameworks').sort({order: 'asc'}).then(data => {
+    res.json(data);
+  }).catch( error => {
+    res.json({ error });
+  });
+});
 
 app.listen(port, console.log(`Server is listening at port ${port}.`));
