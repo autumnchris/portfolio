@@ -19,4 +19,4 @@
 
 ## Demo
 
-View project demo at [https://autumnchris.github.io/portfolio](https://autumnchris.github.io/portfolio).
+View project demo at [https://autumnbullard-portfolio.herokuapp.com](https://autumnbullard-portfolio.herokuapp.com).

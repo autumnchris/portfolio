@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/autumnchris/portfolio/issues"
   },
-  "homepage": "https://autumnchris.github.io/portfolio",
+  "homepage": "https://autumnbullard-portfolio.herokuapp.com",
   "dependencies": {
     "axios": "^0.17.1",
     "babel-core": "^6.26.3",
