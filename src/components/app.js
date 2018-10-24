@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Projects from './projects';
-import Portfolio from '.././db/portfolio.min.json';
 import axios from 'axios';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
@@ -19,7 +18,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    axios.get(Portfolio).then(portfolio => {
+    axios.get('https://autumnbullard-portfolio.herokuapp.com/api').then(portfolio => {
       this.setState({ portfolio: portfolio.data });
     }).catch(() => {
       this.setState({
