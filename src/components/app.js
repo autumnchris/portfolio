@@ -18,7 +18,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://autumnbullard-portfolio.herokuapp.com/api').then(portfolio => {
+    axios.get('/api').then(portfolio => {
       this.setState({ portfolio: portfolio.data });
     }).catch(() => {
       this.setState({
