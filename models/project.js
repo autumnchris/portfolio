@@ -13,7 +13,7 @@ const ProjectSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  frameworks: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Framework' }],
+  frameworks: [{}],
   order: {
     type: Number,
     required: true,
