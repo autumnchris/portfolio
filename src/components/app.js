@@ -48,7 +48,7 @@ export default class App extends Component {
       <div className="body">
         <nav>
           <h1>
-            <a href="../" target="_self">Autumn Bullard</a>
+            <a href="/" target="_self">Autumn Bullard</a>
           </h1>
           <div className="nav-menu">
             <button type="button" onClick={() => this.toggleNavIcon()}>
@@ -105,7 +105,7 @@ export default class App extends Component {
             </section>
           </ScrollableAnchor>
         </main>
-        <footer>Coded by <a href="../" target="_self">Autumn Bullard</a></footer>
+        <footer>Coded by <a href="/" target="_self">Autumn Bullard</a></footer>
       </div>
     );
   }
