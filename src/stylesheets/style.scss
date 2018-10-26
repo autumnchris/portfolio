@@ -28,16 +28,16 @@ html {
     padding: 15px 10px;
     text-align: center;
   }
-  h2 {
-    color: $blue;
+  h1 {
     font-family: $heading-font;
-    font-size: 1.8rem;
-    font-weight: 800;
-    letter-spacing: 6px;
+    font-size: 1.4rem;
+    padding-top: 30px;
+    text-align: center;
+  }
+  h2 {
     line-height: 40px;
     padding-bottom: 24px;
     text-align: center;
-    text-transform: lowercase;
   }
   h3 {
     font-family: $heading-font;
@@ -57,6 +57,11 @@ html {
     right: 0;
     top: 0;
     width: 100%;
+    h1 {
+      font-size: inherit;
+      padding: 0;
+      text-align: left;
+    }
     a,
     a:visited,
     a:active,
@@ -120,6 +125,14 @@ html {
     section {
       min-height: 100vh;
       padding-top: 80px;
+      h2 {
+        color: $blue;
+        font-family: $heading-font;
+        font-size: 1.8rem;
+        font-weight: 800;
+        letter-spacing: 6px;
+        text-transform: lowercase;
+      }
       p {
         line-height: 20px;
         margin-bottom: 15px;
