@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const ProjectSchema = mongoose.Schema({
+const ProjectSchema = Schema({
   title: {
     type: String,
     required: true
@@ -13,7 +14,7 @@ const ProjectSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  frameworks: [{}],
+  frameworks: [{ type: Schema.Types.ObjectId, ref: 'Framework' }],
   order: {
     type: Number,
     required: true,

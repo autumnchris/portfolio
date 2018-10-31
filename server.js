@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const webpack = require('webpack');
 const config = require('./webpack.config.js');
+const Framework = require('./models/framework.js')
 const Project = require('./models/project.js');
 
 const app = express();
@@ -24,7 +25,13 @@ app.get('/', (req, res) => {
 app.use(express.static(`${__dirname}/public`));
 
 app.get('/api', (req, res) => {
-  Project.find({}, 'title description icon frameworks').sort({order: 'asc'}).then(data => {
+  Project.find({}, 'title description icon frameworks').populate({
+    path: 'frameworks',
+    select: 'name demo sourceCode -_id',
+    options: {
+      sort: {name: 'asc'}
+    }
+  }).sort({order: 'asc'}).then(data => {
     res.json(data);
   }).catch( error => {
     res.json({ error });
