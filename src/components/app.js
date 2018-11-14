@@ -85,6 +85,7 @@ export default class App extends Component {
                     <li><a href="https://www.freecodecamp.org/certification/autumnchris/front-end-libraries" target="_blank">Front End Libraries</a> from freeCodeCamp</li>
                     <li><a href="https://www.freecodecamp.org/certification/autumnchris/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms and Data Structures</a> from freeCodeCamp</li>
                     <li><a href="https://www.freecodecamp.org/certification/autumnchris/responsive-web-design" target="_blank">Responsive Web Design</a> from freeCodeCamp</li>
+                    <li><a href="https://www.freecodecamp.org/certification/autumnchris/apis-and-microservices" target="_blank">APIs and Microservices</a> from freeCodeCamp</li>
                     <li><a href="https://www.coursera.org/account/accomplishments/specialization/NTKX2VYA96UD" target="_blank">Web Design for Everybody (Basics of Web Development and Coding)</a> from Coursera and the University of Michigan</li>
                   </ul>
                 </div>
