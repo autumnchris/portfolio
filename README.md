@@ -3,7 +3,7 @@
 ---
 
 ## Built With
-* [React](https://reactjs.org)
+* [React.js](https://reactjs.org)
 * [Sass](http://sass-lang.com)
 * [Webpack](https://webpack.js.org)
 * [Express.js](https://expressjs.com)
