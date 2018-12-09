@@ -3,13 +3,8 @@
   src: url(.././fonts/Esphimere.otf);
 }
 
-$heading-font: Armata, Esphimere, Helvetica, Arial, sans-serif;
-
-$blue: #006f8e;
-$white: #fff;
-$gray: #f2f2f2;
-$linkedin: #0077b5;
-$github: #333;
+@import 'variables';
+@import 'reset';
 
 html {
   background: $gray;
@@ -254,6 +249,7 @@ html {
       input[type=submit] {
         background: $blue;
         color: $white;
+        margin-bottom: 20px;
         padding: 10px;
       }
       .info-message {
