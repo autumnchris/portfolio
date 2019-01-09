@@ -4,8 +4,8 @@
   "description": "Résumé portfolio for Autumn Bullard",
   "main": "server.js",
   "scripts": {
-    "build": "webpack -p",
-    "start": "node server",
+    "build": "webpack --mode production",
+    "start": "npm run build && node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,25 +21,24 @@
   "dependencies": {
     "axios": "^0.17.1",
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.2",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.11",
+    "css-loader": "^1.0.1",
     "express": "^4.16.4",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.11",
+    "mini-css-extract-plugin": "^0.5.0",
     "mongodb": "^3.1.8",
     "mongoose": "^5.3.6",
-    "node-sass": "^4.9.4",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "node-sass": "^4.11.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-scrollable-anchor": "^0.6.1",
-    "sass-loader": "^7.0.3",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
     "url-loader": "^1.1.2",
-    "webpack": "^3.1.0",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.1",
     "webpack-dev-middleware": "^2.0.4",
-    "webpack-dev-server": "^2.9.4",
     "webpack-hot-middleware": "^2.24.2"
   }
 }
