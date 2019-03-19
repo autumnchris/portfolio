@@ -25,13 +25,13 @@ app.get('/', (req, res) => {
 app.use(express.static(`${__dirname}/public`));
 
 app.get('/api', (req, res) => {
-  Project.find({}, 'title description icon frameworks').populate({
+  Project.find({}, 'title description icon frameworks date').populate({
     path: 'frameworks',
     select: 'name demo sourceCode -_id',
     options: {
       sort: {name: 'asc'}
     }
-  }).sort({order: 'asc'}).then(data => {
+  }).sort({date: 'desc'}).then(data => {
     res.json(data);
   }).catch( error => {
     res.json({ error });
