@@ -78,15 +78,14 @@ export default class App extends Component {
                   </div>
                 </div>
                 <div className="col">
-                  <p>I am a front-end web developer based in Jacksonville Beach, Florida. I prioritize accessibility and responsiveness in my markup and design. Producing clean and organized code is also of high importance to me. It's not enough for me just to make something work. It's important to understand what I have made. Does it work effectively? Can I easily apply this process to a future project? Have I considered every scenario?</p>
-                  <p>I am currently in the process of working through the curriculum on <a href="https://www.freecodecamp.org/autumnchris" target="_blank">freeCodeCamp</a> and <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a>.</p>
+                  <p>I am a front-end web developer based in Jacksonville Beach, Florida. I prioritize accessibility and responsiveness in my markup and design. And I try to keep up to date with the latest technologies but also commit to using techniques that I know work well. Producing clean and organized code is also of high importance to me. It's not enough for me just to make something work. It's important to understand what I have made. Does it work effectively? Can I easily apply this process to a future project? Have I considered every scenario?</p>
                   <h3>Certifications:</h3>
                   <ul>
                     <li><a href="https://www.freecodecamp.org/certification/autumnchris/front-end-libraries" target="_blank">Front End Libraries</a> from freeCodeCamp</li>
                     <li><a href="https://www.freecodecamp.org/certification/autumnchris/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms and Data Structures</a> from freeCodeCamp</li>
                     <li><a href="https://www.freecodecamp.org/certification/autumnchris/responsive-web-design" target="_blank">Responsive Web Design</a> from freeCodeCamp</li>
+                    <li><a href="https://www.freecodecamp.org/certification/autumnchris/data-visualization" target="_blank">Data Visualization</a> from freeCodeCamp</li>
                     <li><a href="https://www.freecodecamp.org/certification/autumnchris/apis-and-microservices" target="_blank">APIs and Microservices</a> from freeCodeCamp</li>
-                    <li><a href="https://www.coursera.org/account/accomplishments/specialization/NTKX2VYA96UD" target="_blank">Web Design for Everybody (Basics of Web Development and Coding)</a> from Coursera and the University of Michigan</li>
                   </ul>
                 </div>
               </div>
