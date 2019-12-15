@@ -78,7 +78,7 @@ export default class App extends Component {
                   </div>
                 </div>
                 <div className="col">
-                  <p>I am a front-end web developer based in Jacksonville Beach, Florida. I prioritize accessibility and responsiveness in my markup and design. And I try to keep up to date with the latest technologies but also commit to using techniques that I know work well. Producing clean and organized code is also of high importance to me. It's not enough for me just to make something work. It's important to understand what I have made. Does it work effectively? Can I easily apply this process to a future project? Have I considered every scenario?</p>
+                  <p>I am a front-end web developer residing in Jacksonville Beach, Florida. I prioritize accessibility and responsiveness in my markup and design. It's my aim to keep up to date with the latest technologies while also using techniques that I know work well. Producing clean and organized code is also of high priority to me. It's not enough for me just to make something work. It's important to understand what I have made. Does it work effectively? Can I easily apply this process to a future project? Have I considered every scenario?</p>
                   <h3>Certifications:</h3>
                   <ul>
                     <li><a href="https://www.freecodecamp.org/certification/autumnchris/front-end-libraries" target="_blank">Front End Libraries</a> from freeCodeCamp</li>
