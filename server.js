@@ -18,10 +18,6 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.get('/', (req, res) => {
-  res.sendFile(`${__dirname}/views/index.html`);
-});
-
 app.use(express.static(`${__dirname}/public`));
 
 app.get('/api', (req, res) => {
@@ -39,7 +35,7 @@ app.get('/api', (req, res) => {
 });
 
 app.use((req, res) => {
-  res.sendFile(`${__dirname}/views/404.html`, 404);
+  res.status(404).sendFile(`${__dirname}/public/404.html`);
 });
 
 app.listen(port, console.log(`Server is listening at port ${port}.`));
