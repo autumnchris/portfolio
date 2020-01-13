@@ -104,7 +104,7 @@ caption {
   letter-spacing: inherit; }
 
 html {
-  background: #f2f2f2;
+  background: #e6e6e6;
   background: linear-gradient(to right, #e6e6e6, #f2f2f2) fixed; }
   html a,
   html a:visited,
@@ -191,7 +191,7 @@ html {
       html nav .nav-menu .hidden {
         display: none; }
       html nav .nav-menu .visible {
-        border-top: #f2f2f2;
+        border-top: #e6e6e6;
         display: flex;
         flex-direction: column;
         left: 0;
