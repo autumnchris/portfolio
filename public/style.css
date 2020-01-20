@@ -35,7 +35,7 @@ textarea {
   border: 0;
   border-radius: 0;
   box-sizing: border-box;
-  color: #333;
+  color: #333333;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 100%;
   font-weight: 400;
@@ -120,12 +120,12 @@ html {
     text-align: center; }
   html h1 {
     font-family: Armata, Esphimere, Helvetica, Arial, sans-serif;
-    font-size: 1.4rem;
-    padding-top: 30px;
+    font-size: 2rem;
+    line-height: 1.1;
+    padding-top: 35px;
     text-align: center; }
   html h2 {
-    line-height: 40px;
-    padding-bottom: 24px;
+    padding-top: 20px;
     text-align: center; }
   html h3 {
     font-family: Armata, Esphimere, Helvetica, Arial, sans-serif;
@@ -135,7 +135,7 @@ html {
     margin-bottom: 8px;
     text-transform: uppercase; }
   html nav {
-    background: #fff;
+    background: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -146,13 +146,14 @@ html {
     width: 100%; }
     html nav h1 {
       font-size: inherit;
+      line-height: inherit;
       padding: 0;
       text-align: left; }
     html nav a,
     html nav a:visited,
     html nav a:active,
     html nav a:focus {
-      background: #fff;
+      background: white;
       display: flex;
       font-family: Armata, Esphimere, Helvetica, Arial, sans-serif;
       letter-spacing: 8px;
@@ -164,7 +165,7 @@ html {
       html nav a:active:hover,
       html nav a:focus:hover {
         background: #006f8e;
-        color: #fff;
+        color: white;
         text-decoration: none; }
     html nav .nav-menu {
       align-items: center;
@@ -216,6 +217,9 @@ html {
         font-size: 1.8rem;
         font-weight: 800;
         letter-spacing: 6px;
+        line-height: 40px;
+        padding-top: 0;
+        padding-bottom: 24px;
         text-transform: lowercase; }
       html main section p {
         line-height: 20px;
@@ -235,7 +239,7 @@ html {
         flex-direction: column; }
         html main .about .content .col:first-child .avatar {
           border-radius: 50%;
-          box-shadow: 1px 1px 10px #999;
+          box-shadow: 1px 1px 10px #999999;
           width: 200px; }
         html main .about .content .col:first-child a,
         html main .about .content .col:first-child a:visited,
@@ -267,8 +271,8 @@ html {
         html main .portfolio .content {
           grid-template-columns: 30% 30% 30%; } }
       html main .portfolio .content .card {
-        background: #fff;
-        box-shadow: 1px 1px 20px #ccc;
+        background: white;
+        box-shadow: 1px 1px 20px #cccccc;
         padding: 20px; }
         html main .portfolio .content .card h3 {
           text-align: center; }
@@ -282,7 +286,7 @@ html {
           font-weight: 800;
           margin-bottom: 8px; }
         html main .portfolio .content .card tr {
-          border-top: 1px solid #ddd; }
+          border-top: 1px solid #dedede; }
           html main .portfolio .content .card tr td {
             font-size: 0.8rem;
             padding: 8px 12px; }
@@ -303,13 +307,13 @@ html {
     html main .contact input[type=text],
     html main .contact input[type=email],
     html main .contact textarea {
-      background: #fff;
-      border: 1px solid #999;
+      background: white;
+      border: 1px solid #999999;
       padding: 8px;
       width: 100%; }
     html main .contact input[type=submit] {
       background: #006f8e;
-      color: #fff;
+      color: white;
       margin-bottom: 20px;
       padding: 10px; }
     html main .contact .info-message {
@@ -323,7 +327,7 @@ html {
         color: inherit;
         font-weight: 700; }
   html footer {
-    background: #fff;
+    background: white;
     bottom: 0;
     font-size: 0.8rem;
     left: 0;
