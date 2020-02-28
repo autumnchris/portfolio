@@ -3,7 +3,7 @@ import Projects from './projects';
 import axios from 'axios';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
-const avatar = require('.././images/avatar.jpg');
+const avatar = require('../images/avatar.jpg');
 
 export default class App extends Component {
 
@@ -18,7 +18,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('/api').then(portfolio => {
+    axios.get('/api/projects').then(portfolio => {
       this.setState({ portfolio: portfolio.data });
     }).catch(() => {
       this.setState({
@@ -105,7 +105,6 @@ export default class App extends Component {
             </section>
           </ScrollableAnchor>
         </main>
-        <footer>Coded by <a href="/" target="_self">Autumn Bullard</a></footer>
       </div>
     );
   }

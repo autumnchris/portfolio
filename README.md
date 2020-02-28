@@ -9,6 +9,7 @@
 * [Express.js](https://expressjs.com)
 * [Mongoose](https://mongoosejs.com)
 * [MongoDB](https://www.mongodb.com)
+* [EJS](https://ejs.co)
 * [axios](https://github.com/axios/axios)
 * [Babel](https://babeljs.io)
 * [Font Awesome](https://fontawesome.com)
