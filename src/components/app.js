@@ -101,7 +101,17 @@ export default class App extends Component {
           <ScrollableAnchor id="contact">
             <section className="contact">
               <h2>Contact Me</h2>
-              <p className="message info-message"><span className="fa fa-info-circle fa-lg fa-fw"></span> Contact form coming soon! For the time being, you can reach me at <a href="mailto:autumncbullard@gmail.com" target="_self">autumncbullard@gmail.com</a>.</p>
+              <div className="content">
+                <div className="col">
+                  <h3>Email Me At...</h3>
+                  <div className="contact-links email"><span className="far fa-envelope"></span> <a href="mailto:autumncbullard@gmail.com" target="_self">autumncbullard@gmail.com</a></div>
+                </div>
+                <div className="col">
+                  <h3>Find Me On...</h3>
+                  <div className="contact-links linkedin-profile"><span className="fab fa-linkedin"></span> <a href="https://www.linkedin.com/in/autumncbullard" target="_blank">LinkedIn</a></div>
+                  <div className="contact-links github-profile"><span className="fab fa-github"></span> <a href="https://github.com/autumnchris" target="_blank">GitHub</a></div>
+                </div>
+              </div>
             </section>
           </ScrollableAnchor>
         </main>

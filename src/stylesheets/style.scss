@@ -26,6 +26,7 @@ html {
   h1 {
     font-family: $heading-font;
     font-size: 1.8rem;
+    font-weight: 700;
     line-height: 1.4;
     padding-top: 35px;
     text-align: center;
@@ -36,8 +37,8 @@ html {
   }
   h3 {
     font-family: $heading-font;
-    font-size: 1rem;
-    font-weight: 800;
+    font-size: 1.1rem;
+    font-weight: 700;
     line-height: 22px;
     margin-bottom: 8px;
     text-transform: uppercase;
@@ -65,6 +66,7 @@ html {
       background: change-color($black, $lightness: 100%);
       display: flex;
       font-family: $heading-font;
+      font-weight: 700;
       letter-spacing: 8px;
       padding: 15px;
       padding-right: 7px;
@@ -117,7 +119,7 @@ html {
     }
   }
   main {
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     section {
       min-height: 100vh;
       padding-top: 80px;
@@ -125,7 +127,7 @@ html {
         color: $blue;
         font-family: $heading-font;
         font-size: 1.8rem;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 6px;
         line-height: 1.4;
         padding-top: 0;
@@ -230,42 +232,21 @@ html {
       }
     }
     .contact {
-      .form-group,
-      .button-group {
-        margin: 15px auto 0;
-        max-width: 400px;
-        width: 100%;
-      }
-      label {
-        display: block;
-        font-family: $heading-font;
-        margin-bottom: 5px;
-        text-transform: uppercase;
-      }
-      input[type=text],
-      input[type=email],
-      textarea {
-        background: change-color($black, $lightness: 100%);
-        border: 1px solid change-color($black, $lightness: 60%);
-        padding: 8px;
-        width: 100%;
-      }
-      input[type=submit] {
-        background: $blue;
-        color: change-color($black, $lightness: 100%);
-        margin-bottom: 20px;
-        padding: 10px;
-      }
-      .info-message {
-        background: change-color($info-blue, $lightness: 95%);
-        border: 1px solid change-color($info-blue, $lightness: 90%);
-        color: $info-blue;
-        a,
-        a:hover,
-        a:active,
-        a:focus {
-          color: inherit;
-          font-weight: 700;
+      .content {
+        margin: auto;
+        max-width: 300px;
+        .col {
+          margin: 0 40px 40px 0;
+          .contact-links {
+            line-height: 1.6;
+            a,
+            a:visited,
+            a:hover,
+            a:active,
+            a:focus {
+              font-weight: 600;
+            }
+          }
         }
       }
     }

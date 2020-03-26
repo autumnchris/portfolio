@@ -121,6 +121,7 @@ html {
   html h1 {
     font-family: Armata, Esphimere, Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
+    font-weight: 700;
     line-height: 1.4;
     padding-top: 35px;
     text-align: center; }
@@ -129,8 +130,8 @@ html {
     text-align: center; }
   html h3 {
     font-family: Armata, Esphimere, Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 800;
+    font-size: 1.1rem;
+    font-weight: 700;
     line-height: 22px;
     margin-bottom: 8px;
     text-transform: uppercase; }
@@ -156,6 +157,7 @@ html {
       background: white;
       display: flex;
       font-family: Armata, Esphimere, Helvetica, Arial, sans-serif;
+      font-weight: 700;
       letter-spacing: 8px;
       padding: 15px;
       padding-right: 7px;
@@ -207,7 +209,7 @@ html {
           position: inherit;
           margin: 0; } }
   html main {
-    padding-bottom: 70px; }
+    padding-bottom: 30px; }
     html main section {
       min-height: 100vh;
       padding-top: 80px; }
@@ -215,7 +217,7 @@ html {
         color: #006f8e;
         font-family: Armata, Esphimere, Helvetica, Arial, sans-serif;
         font-size: 1.8rem;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 6px;
         line-height: 1.4;
         padding-top: 0;
@@ -294,38 +296,19 @@ html {
       background: #fee6ea;
       border: 1px solid #fecdd6;
       color: #82031a; }
-    html main .contact .form-group,
-    html main .contact .button-group {
-      margin: 15px auto 0;
-      max-width: 400px;
-      width: 100%; }
-    html main .contact label {
-      display: block;
-      font-family: Armata, Esphimere, Helvetica, Arial, sans-serif;
-      margin-bottom: 5px;
-      text-transform: uppercase; }
-    html main .contact input[type=text],
-    html main .contact input[type=email],
-    html main .contact textarea {
-      background: white;
-      border: 1px solid #999999;
-      padding: 8px;
-      width: 100%; }
-    html main .contact input[type=submit] {
-      background: #006f8e;
-      color: white;
-      margin-bottom: 20px;
-      padding: 10px; }
-    html main .contact .info-message {
-      background: #e6f5ff;
-      border: 1px solid #ccebff;
-      color: #005085; }
-      html main .contact .info-message a,
-      html main .contact .info-message a:hover,
-      html main .contact .info-message a:active,
-      html main .contact .info-message a:focus {
-        color: inherit;
-        font-weight: 700; }
+    html main .contact .content {
+      margin: auto;
+      max-width: 300px; }
+      html main .contact .content .col {
+        margin: 0 40px 40px 0; }
+        html main .contact .content .col .contact-links {
+          line-height: 1.6; }
+          html main .contact .content .col .contact-links a,
+          html main .contact .content .col .contact-links a:visited,
+          html main .contact .content .col .contact-links a:hover,
+          html main .contact .content .col .contact-links a:active,
+          html main .contact .content .col .contact-links a:focus {
+            font-weight: 600; }
   html footer {
     background: white;
     bottom: 0;
