@@ -270,7 +270,8 @@ html {
               font-size: 0.8rem;
               line-height: 1.8; }
               html main .portfolio .content .card .project-links .framework .project-link span {
-                font-size: 1rem; }
+                font-size: 1rem;
+                vertical-align: middle; }
     html main .portfolio .error-message {
       background: #fee6ea;
       border: 1px solid #fecdd6;
@@ -279,15 +280,38 @@ html {
       margin: auto;
       max-width: 300px; }
       html main .contact .content .col {
-        margin: 0 40px 40px 0; }
-        html main .contact .content .col .contact-links {
-          line-height: 1.6; }
-          html main .contact .content .col .contact-links a,
-          html main .contact .content .col .contact-links a:visited,
-          html main .contact .content .col .contact-links a:hover,
-          html main .contact .content .col .contact-links a:active,
-          html main .contact .content .col .contact-links a:focus {
-            font-weight: 600; }
+        margin-bottom: 40px; }
+        html main .contact .content .col a,
+        html main .contact .content .col a:visited,
+        html main .contact .content .col a:hover,
+        html main .contact .content .col a:active,
+        html main .contact .content .col a:focus {
+          font-weight: 600; }
+        html main .contact .content .col span {
+          font-size: 1.1rem;
+          vertical-align: middle; }
+        html main .contact .content .col .social-links,
+        html main .contact .content .col .social-links:visited,
+        html main .contact .content .col .social-links:hover,
+        html main .contact .content .col .social-links:active,
+        html main .contact .content .col .social-links:focus {
+          border-radius: 3px;
+          color: #e6e6e6;
+          display: block;
+          margin-bottom: 10px;
+          padding: 12px;
+          text-decoration: none;
+          width: 200px; }
+          html main .contact .content .col .social-links:hover,
+          html main .contact .content .col .social-links:visited:hover,
+          html main .contact .content .col .social-links:hover:hover,
+          html main .contact .content .col .social-links:active:hover,
+          html main .contact .content .col .social-links:focus:hover {
+            box-shadow: 1px 1px 6px #999999; }
+        html main .contact .content .col .linkedin-profile {
+          background: #0077b5; }
+        html main .contact .content .col .github-profile {
+          background: #333; }
   html footer {
     background: white;
     bottom: 0;

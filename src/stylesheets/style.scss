@@ -226,6 +226,7 @@ html {
                 line-height: 1.8;
                 span {
                   font-size: 1rem;
+                  vertical-align: middle;
                 }
               }
             }
@@ -243,16 +244,39 @@ html {
         margin: auto;
         max-width: 300px;
         .col {
-          margin: 0 40px 40px 0;
-          .contact-links {
-            line-height: 1.6;
-            a,
-            a:visited,
-            a:hover,
-            a:active,
-            a:focus {
-              font-weight: 600;
+          margin-bottom: 40px;
+          a,
+          a:visited,
+          a:hover,
+          a:active,
+          a:focus {
+            font-weight: 600;
+          }
+          span {
+            font-size: 1.1rem;
+            vertical-align: middle;
+          }
+          .social-links,
+          .social-links:visited,
+          .social-links:hover,
+          .social-links:active,
+          .social-links:focus {
+            border-radius: 3px;
+            color: change-color($black, $lightness: 90%);
+            display: block;
+            margin-bottom: 10px;
+            padding: 12px;
+            text-decoration: none;
+            width: 200px;
+            &:hover {
+              box-shadow: 1px 1px 6px change-color($black, $lightness: 60%);
             }
+          }
+          .linkedin-profile {
+            background: $linkedin;
+          }
+          .github-profile {
+            background: $github;
           }
         }
       }
