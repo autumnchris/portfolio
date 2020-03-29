@@ -1,17 +1,12 @@
 import React from 'react';
 
-const Framework = ({ framework }) => {
+const Framework = ({ framework, numOfFrameworks }) => {
 
   return (
-    <tr>
-      <td>{framework.name}</td>
-      <td>
-        <a href={framework.sourceCode} target="_blank">source code</a>
-      </td>
-      <td>
-        <a href={framework.demo} target="_blank">demo</a>
-      </td>
-    </tr>
+    <div className="framework">
+      <div className="project-link source-code"><span className="fas fa-code fa-fw"></span> <a href={framework.sourceCode} target="_blank">source code{numOfFrameworks > 1 ? ` (${framework.name} version)` : ''}</a></div>
+      <div className="project-link demo"><span className="fas fa-desktop fa-fw"></span> <a href={framework.demo} target="_blank">demo{numOfFrameworks > 1 ? ` (${framework.name} version)` : ''}</a></div>
+    </div>
   );
 }
 

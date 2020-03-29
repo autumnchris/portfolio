@@ -23,14 +23,7 @@ p,
 img,
 ul,
 li,
-table,
-tbody,
-tr,
-td,
-form,
-label,
-input,
-textarea {
+hr {
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -74,11 +67,7 @@ span {
 button,
 button:hover,
 button:active,
-button:focus,
-input[type=submit],
-input[type=submit]:hover,
-input[type=submit]:active,
-input[type=submit]:focus {
+button:focus {
   cursor: pointer; }
 
 ol,
@@ -86,20 +75,6 @@ ul {
   list-style: none; }
 
 li {
-  color: inherit;
-  letter-spacing: inherit; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-thead,
-tbody,
-tfoot,
-tr,
-th,
-td,
-caption {
   color: inherit;
   letter-spacing: inherit; }
 
@@ -283,15 +258,19 @@ html {
           font-size: 4.5rem;
           margin: 20px 0;
           text-align: center; }
-        html main .portfolio .content .card h4 {
-          font-family: Armata, Esphimere, Helvetica, Arial, sans-serif;
-          font-weight: 800;
-          margin-bottom: 8px; }
-        html main .portfolio .content .card tr {
-          border-top: 1px solid #dedede; }
-          html main .portfolio .content .card tr td {
-            font-size: 0.8rem;
-            padding: 8px 12px; }
+        html main .portfolio .content .card hr {
+          border-bottom: 1px solid #cccccc; }
+        html main .portfolio .content .card .project-links {
+          margin-top: 15px; }
+          html main .portfolio .content .card .project-links .framework {
+            margin-bottom: 10px; }
+            html main .portfolio .content .card .project-links .framework:last-child {
+              margin-bottom: 0; }
+            html main .portfolio .content .card .project-links .framework .project-link {
+              font-size: 0.8rem;
+              line-height: 1.8; }
+              html main .portfolio .content .card .project-links .framework .project-link span {
+                font-size: 1rem; }
     html main .portfolio .error-message {
       background: #fee6ea;
       border: 1px solid #fecdd6;

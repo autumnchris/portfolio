@@ -21,14 +21,7 @@ p,
 img,
 ul,
 li,
-table,
-tbody,
-tr,
-td,
-form,
-label,
-input,
-textarea {
+hr {
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -75,11 +68,7 @@ span {
 button,
 button:hover,
 button:active,
-button:focus,
-input[type=submit],
-input[type=submit]:hover,
-input[type=submit]:active,
-input[type=submit]:focus {
+button:focus {
   cursor: pointer;
 }
 
@@ -89,22 +78,6 @@ ul {
 }
 
 li {
-  color: inherit;
-  letter-spacing: inherit;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-thead,
-tbody,
-tfoot,
-tr,
-th,
-td,
-caption {
   color: inherit;
   letter-spacing: inherit;
 }

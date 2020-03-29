@@ -211,16 +211,23 @@ html {
             margin: 20px 0;
             text-align: center;
           }
-          h4 {
-            font-family: $heading-font;
-            font-weight: 800;
-            margin-bottom: 8px;
+          hr {
+            border-bottom: 1px solid change-color($black, $lightness: 80%);
           }
-          tr {
-            border-top: 1px solid change-color($black, $lightness: 87%);
-            td {
-              font-size: 0.8rem;
-              padding: 8px 12px;
+          .project-links {
+            margin-top: 15px;
+            .framework {
+              margin-bottom: 10px;
+              &:last-child {
+                margin-bottom: 0;
+              }
+              .project-link {
+                font-size: 0.8rem;
+                line-height: 1.8;
+                span {
+                  font-size: 1rem;
+                }
+              }
             }
           }
         }
