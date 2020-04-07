@@ -64,6 +64,7 @@ html {
     a:active,
     a:focus {
       background: change-color($black, $lightness: 100%);
+      cursor: pointer;
       display: flex;
       font-family: $heading-font;
       font-weight: 700;
@@ -164,7 +165,7 @@ html {
           a:active,
           a:focus {
             display: inline-block;
-            margin: 10px 5px;
+            margin: 10px 0;
           }
           .linkedin-icon:hover {
             color: $linkedin;
