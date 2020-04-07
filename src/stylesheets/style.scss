@@ -253,19 +253,15 @@ html {
           a:focus {
             font-weight: 600;
           }
-          span {
-            font-size: 1.1rem;
-            vertical-align: middle;
-          }
           .social-links,
           .social-links:visited,
           .social-links:hover,
           .social-links:active,
           .social-links:focus {
             border-radius: 3px;
-            color: change-color($black, $lightness: 90%);
+            color: change-color($black, $lightness: 100%);
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 14px;
             padding: 12px;
             text-decoration: none;
             width: 200px;

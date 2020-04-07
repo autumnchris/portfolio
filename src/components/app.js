@@ -99,12 +99,12 @@ export default class App extends Component {
             <div className="content">
               <div className="col">
                 <h3>Email Me At...</h3>
-                <div className="email"><span className="far fa-envelope fa-fw"></span> <a href="mailto:autumncbullard@gmail.com" target="_self">autumncbullard@gmail.com</a></div>
+                <div className="email"><span className="far fa-envelope fa-lg fa-fw"></span> <a href="mailto:autumncbullard@gmail.com" target="_self">autumncbullard@gmail.com</a></div>
               </div>
               <div className="col">
                 <h3>Find Me On...</h3>
-                <a className="social-links linkedin-profile" href="https://www.linkedin.com/in/autumncbullard" target="_blank"><span className="fab fa-linkedin fa-fw"></span> LinkedIn</a>
-                <a className="social-links github-profile" href="https://github.com/autumnchris" target="_blank"><span className="fab fa-github fa-fw"></span> GitHub</a>
+                <a className="social-links linkedin-profile" href="https://www.linkedin.com/in/autumncbullard" target="_blank"><span className="fab fa-linkedin fa-lg fa-fw"></span> LinkedIn</a>
+                <a className="social-links github-profile" href="https://github.com/autumnchris" target="_blank"><span className="fab fa-github fa-lg fa-fw"></span> GitHub</a>
               </div>
             </div>
           </section>
