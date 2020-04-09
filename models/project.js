@@ -17,8 +17,7 @@ const ProjectSchema = Schema({
   frameworks: [{ type: Schema.Types.ObjectId, ref: 'Framework' }],
   date: {
     type: Number,
-    required: true,
-    unique: true
+    required: true
   }
 });
 
