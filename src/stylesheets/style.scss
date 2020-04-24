@@ -4,291 +4,399 @@
 }
 
 @import "variables";
-@import "reset";
+
+// BASE PAGE STYLES
 
 html {
-  background: change-color($black, $lightness: 90%);
-  background: linear-gradient(to right, change-color($black, $lightness: 90%), change-color($black, $lightness: 95%)) fixed;
+  background: transparent;
+  box-sizing: border-box;
+  color: change-color($black, $lightness: 20%);
+  height: 100%;
+  letter-spacing: 1px;
+  body {
+    background: change-color($black, $lightness: 90%);
+    background: linear-gradient(to right, change-color($black, $lightness: 90%), change-color($black, $lightness: 95%)) fixed;
+    min-height: 100%;
+    overscroll-behavior: none;
+    padding: 0 20px;
+    position: relative;
+    header nav {
+      background: change-color($black, $lightness: 100%);
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    main {
+      padding-bottom: 6rem;
+      section {
+        min-height: 100vh;
+        padding-top: 80px;
+      }
+    }
+    footer {
+      background: change-color($black, $lightness: 100%);
+      bottom: 0;
+      font-size: 0.8rem;
+      left: 0;
+      letter-spacing: 2px;
+      padding: 14px 0;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      width: 100%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      box-sizing: border-box;
+      margin-top: 0;
+    }
+  }
+}
+
+// BASE ELEMENT STYLES
+
+div,
+header,
+main,
+footer,
+nav,
+section,
+p,
+img,
+ul,
+li,
+hr,
+button,
+button:hover,
+button:active,
+button:focus {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+p,
+li {
+  line-height: 1.45;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+a:focus,
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  outline: none;
+}
+
+.button,
+.button:visited,
+.button:hover,
+.button:active,
+.button:focus {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  line-height: normal;
+  padding: 0;
+  width: auto;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.message {
+  border-radius: 5px;
+  line-height: 1.55;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+// SPECIFIC ELEMENT STYLES
+
+h1 {
+  font-family: $heading-font;
+}
+
+h2 {
+  color: $blue;
+  font-family: $heading-font;
+  font-size: 1.8rem;
+  letter-spacing: 6px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+h3 {
+  font-family: $heading-font;
+  font-size: 1.1rem;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+
+nav {
+  .nav-item {
+    font-family: $heading-font;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    line-height: normal;
+    margin: 0;
+    text-transform: uppercase;
+    a,
+    a:visited,
+    a:hover,
+    a:active,
+    a:focus {
+      cursor: pointer;
+      display: block;
+      float: left;
+      padding: 15px;
+      padding-right: 7px;
+      text-decoration: none;
+    }
+  }
+  h1 {
+    float: left;
+    a,
+    a:visited,
+    a:hover,
+    a:active,
+    a:focus {
+      color: change-color($black, $lightness: 20%);
+      &:focus {
+        box-shadow: none;
+        color: $blue;
+      }
+    }
+  }
+  .nav-menu {
+    float: right;
+    .menu-toggle,
+    .menu-toggle:hover,
+    .menu-toggle:active,
+    .menu-toggle:focus {
+      display: none;
+    }
+    .nav-links {
+      a:hover,
+      a:focus {
+        border-bottom: 2px solid $blue;
+        box-shadow: none;
+      }
+    }
+    @media only screen and (max-width: 760px) {
+      .menu-toggle,
+      .menu-toggle:hover,
+      .menu-toggle:active,
+      .menu-toggle:focus {
+        color: $blue;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        &:focus {
+          background: change-color($black, $lightness: 90%);
+          border-radius: 5px;
+          box-shadow: none;
+        }
+        .menu-toggle-icon {
+          font-size: 1.8rem;
+        }
+      }
+      .nav-links.hidden {
+        display: none;
+      }
+      .nav-links.visible {
+        background: change-color($black, $lightness: 100%);
+        left: 0;
+        position: absolute;
+        top: 45px;
+        width: 100%;
+        a,
+        a:visited,
+        a:hover,
+        a:active,
+        a:focus {
+          float: none;
+          &:hover,
+          &:focus {
+            background: $blue;
+            border: 0;
+            color: change-color($black, $lightness: 100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.about .content {
+  display: grid;
+  grid-template-columns: 90%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1000px;
+  @media only screen and (min-width: 760px) {
+    grid-template-columns: 30% 60%;
+  }
+  .col:first-child {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .avatar {
+      border-radius: 50%;
+      box-shadow: 1px 1px 10px change-color($black, $lightness: 60%);
+      max-width: 200px;
+      width: 100%;
+    }
+    a,
+    a:visited,
+    a:hover,
+    a:active,
+    a:focus {
+      display: inline-block;
+      margin: 10px 0;
+    }
+    .linkedin-icon:hover {
+      color: $linkedin;
+    }
+    .github-icon:hover {
+      color: $github;
+    }
+  }
+}
+
+.portfolio .content {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 90%;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  @media only screen and (min-width: 720px) {
+    grid-template-columns: 45% 45%;
+  }
+  @media only screen and (min-width: 1050px) {
+    grid-template-columns: 30% 30% 30%;
+  }
+  .card {
+    background: change-color($black, $lightness: 100%);
+    box-shadow: 1px 1px 20px change-color($black, $lightness: 80%);
+    padding: 20px;
+    h3 {
+      text-align: center;
+    }
+    .project-icon {
+      color: $blue;
+      font-size: 4.5rem;
+      text-align: center;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    hr {
+      border: 0;
+      border-bottom: 1px solid change-color($black, $lightness: 80%);
+    }
+    .project-links {
+      margin-top: 15px;
+      .framework {
+        margin-bottom: 12px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .project-link-icon {
+          vertical-align: middle;
+        }
+        .project-link {
+          line-height: 1.4;
+          a,
+          a:visited,
+          a:hover,
+          a:active,
+          a:focus {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact .content {
+  margin: 0 auto;
+  max-width: 300px;
   a,
   a:visited,
   a:hover,
   a:active,
   a:focus {
-    color: $blue;
+    font-weight: 600;
   }
-  .message {
-    border-radius: 5px;
-    margin: auto;
-    max-width: 800px;
-    padding: 15px 10px;
-    text-align: center;
+  .email {
+    margin-bottom: 40px;
   }
-  h1 {
-    font-family: $heading-font;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1.4;
-    padding-top: 35px;
-    text-align: center;
-  }
-  h2 {
-    padding-top: 20px;
-    text-align: center;
-  }
-  h3 {
-    font-family: $heading-font;
-    font-size: 1.1rem;
-    font-weight: 700;
-    line-height: 22px;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-  }
-  nav {
-    background: change-color($black, $lightness: 100%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-    h1 {
-      font-size: inherit;
-      line-height: inherit;
-      padding: 0;
-      text-align: left;
-    }
-    a,
-    a:visited,
-    a:active,
-    a:focus {
-      background: change-color($black, $lightness: 100%);
-      cursor: pointer;
-      display: flex;
-      font-family: $heading-font;
-      font-weight: 700;
-      letter-spacing: 8px;
-      padding: 15px;
-      padding-right: 7px;
-      text-transform: uppercase;
-      &:hover {
-        background: $blue;
-        color: change-color($black, $lightness: 100%);
-        text-decoration: none;
-      }
-    }
-    .nav-menu {
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      button,
-      button:hover,
-      button:active,
-      button:focus {
-        color: $blue;
-        margin-right: 15px;
-        outline: none;
-        @media only screen and (min-width: 760px) {
-          display: none;
-        }
-        .material-icons {
-          font-size: 1.8rem;
-        }
-      }
-      .hidden {
-        display: none;
-      }
-      .visible {
-        border-top: change-color($black, $lightness: 90%);
-        display: flex;
-        flex-direction: column;
-        left: 0;
-        margin-top: 89px;
-        position: fixed;
-        width: 100%;
-      }
-      .nav-links {
-        @media only screen and (min-width: 760px) {
-          border: 0;
-          display: flex;
-          flex-direction: row;
-          position: inherit;
-          margin: 0;
-        }
-      }
+  .social-link,
+  .social-link:visited,
+  .social-link:hover,
+  .social-link:active,
+  .social-link:focus {
+    border-radius: 3px;
+    color: change-color($black, $lightness: 100%);
+    display: block;
+    margin-bottom: 14px;
+    padding: 12px;
+    text-decoration: none;
+    width: 200px;
+    &:hover {
+      box-shadow: 1px 1px 6px change-color($black, $lightness: 60%);
     }
   }
-  main {
-    padding-bottom: 30px;
-    section {
-      min-height: 100vh;
-      padding-top: 80px;
-      h2 {
-        color: $blue;
-        font-family: $heading-font;
-        font-size: 1.8rem;
-        font-weight: 700;
-        letter-spacing: 6px;
-        line-height: 1.4;
-        padding-top: 0;
-        padding-bottom: 24px;
-        text-transform: lowercase;
-      }
-      p {
-        line-height: 20px;
-        margin-bottom: 15px;
-      }
-    }
-    .about {
-      .content {
-        display: grid;
-        grid-template-columns: 90%;
-        justify-content: space-evenly;
-        margin: auto;
-        max-width: 1000px;
-        @media only screen and (min-width: 760px) {
-          grid-template-columns: 30% 60%;
-        }
-        .col:first-child {
-          align-items: center;
-          display: flex;
-          flex-direction: column;
-          .avatar {
-            border-radius: 50%;
-            box-shadow: 1px 1px 10px change-color($black, $lightness: 60%);
-            width: 200px;
-          }
-          a,
-          a:visited,
-          a:hover,
-          a:active,
-          a:focus {
-            display: inline-block;
-            margin: 10px 0;
-          }
-          .linkedin-icon:hover {
-            color: $linkedin;
-          }
-          .github-icon:hover {
-            color: $github;
-          }
-        }
-        .col:last-child {
-          ul {
-            list-style: disc;
-            padding-left: 30px;
-            li {
-              line-height: 20px;
-            }
-          }
-        }
-      }
-    }
-    .portfolio {
-      .content {
-        display: grid;
-        grid-gap: 30px;
-        grid-template-columns: 90%;
-        justify-content: center;
-        margin: auto;
-        max-width: 1200px;
-        @media only screen and (min-width: 720px) {
-          grid-template-columns: 45% 45%;
-        }
-        @media only screen and (min-width: 1050px) {
-          grid-template-columns: 30% 30% 30%;
-        }
-        .card {
-          background: change-color($black, $lightness: 100%);
-          box-shadow: 1px 1px 20px change-color($black, $lightness: 80%);
-          padding: 20px;
-          h3 {
-            text-align: center;
-          }
-          .icon {
-            color: $blue;
-            font-size: 4.5rem;
-            margin: 20px 0;
-            text-align: center;
-          }
-          hr {
-            border-bottom: 1px solid change-color($black, $lightness: 80%);
-          }
-          .project-links {
-            margin-top: 15px;
-            .framework {
-              margin-bottom: 10px;
-              &:last-child {
-                margin-bottom: 0;
-              }
-              .project-link {
-                font-size: 0.8rem;
-                line-height: 1.8;
-                span {
-                  font-size: 1rem;
-                  vertical-align: middle;
-                }
-              }
-            }
-          }
-        }
-      }
-      .error-message {
-        background: change-color($error-red, $lightness: 95%);
-        border: 1px solid change-color($error-red, $lightness: 90%);
-        color: $error-red;
-      }
-    }
-    .contact {
-      .content {
-        margin: auto;
-        max-width: 300px;
-        .col {
-          margin-bottom: 40px;
-          a,
-          a:visited,
-          a:hover,
-          a:active,
-          a:focus {
-            font-weight: 600;
-          }
-          .social-links,
-          .social-links:visited,
-          .social-links:hover,
-          .social-links:active,
-          .social-links:focus {
-            border-radius: 3px;
-            color: change-color($black, $lightness: 100%);
-            display: block;
-            margin-bottom: 14px;
-            padding: 12px;
-            text-decoration: none;
-            width: 200px;
-            &:hover {
-              box-shadow: 1px 1px 6px change-color($black, $lightness: 60%);
-            }
-          }
-          .linkedin-profile {
-            background: $linkedin;
-          }
-          .github-profile {
-            background: $github;
-          }
-        }
-      }
-    }
+  .linkedin-profile {
+    background: $linkedin;
   }
-  footer {
-    background: change-color($black, $lightness: 100%);
-    bottom: 0;
-    font-size: 0.8rem;
-    left: 0;
-    letter-spacing: 2px;
-    padding: 14px 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 100%;
+  .github-profile {
+    background: $github;
   }
+}
+
+.error-message {
+  background: change-color($error-red, $lightness: 95%);
+  border: 1px solid change-color($error-red, $lightness: 90%);
+  color: $error-red;
+}
+
+.page-not-found-message {
+  padding-top: 35px;
+  line-height: 1.35;
+  text-align: center;
 }

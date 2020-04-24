@@ -10,7 +10,7 @@ const ProjectItem = ({ project }) => {
   return (
     <div className="card">
       <h3>{project.title}</h3>
-      <div className="icon">
+      <div className="project-icon">
         <span className={`${project.icon} fa-fw`}></span>
       </div>
       <p>{project.description}</p>

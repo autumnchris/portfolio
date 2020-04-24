@@ -46,21 +46,23 @@ export default class App extends Component {
   render() {
     return (
       <div className="body">
-        <nav>
-          <h1>
-            <a onClick={scroll.scrollToTop}>Autumn Bullard</a>
-          </h1>
-          <div className="nav-menu">
-            <button type="button" onClick={() => this.toggleNavIcon()}>
-              <span className="material-icons">{this.state.toggleClass}</span>
-            </button>
-            <div className={`nav-links ${this.state.navLinksClass}`}>
-              <Link to="about" smooth duration={1000}>About</Link>
-              <Link to="portfolio" smooth duration={1000}>Portfolio</Link>
-              <Link to="contact" smooth duration={1000}>Contact</Link>
+        <header>
+          <nav>
+            <h1 className="nav-item">
+              <a onClick={scroll.scrollToTop} tabindex="0">Autumn Bullard</a>
+            </h1>
+            <div className="nav-item nav-menu">
+              <button type="button" className="button menu-toggle" onClick={() => this.toggleNavIcon()}>
+                <span className="material-icons menu-toggle-icon">{this.state.toggleClass}</span>
+              </button>
+              <div className={`nav-links ${this.state.navLinksClass}`}>
+                <Link to="about" smooth duration={1000} tabindex="0">About</Link>
+                <Link to="portfolio" smooth duration={1000} tabindex="0">Portfolio</Link>
+                <Link to="contact" smooth duration={1000} tabindex="0">Contact</Link>
+              </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </header>
         <main>
           <section className="about" id="about">
             <h2>About the Developer</h2>
@@ -97,14 +99,12 @@ export default class App extends Component {
           <section className="contact" id="contact">
             <h2>Contact Me</h2>
             <div className="content">
-              <div className="col">
-                <h3>Email Me At...</h3>
-                <div className="email"><span className="far fa-envelope fa-lg fa-fw"></span> <a href="mailto:autumncbullard@gmail.com" target="_self">autumncbullard@gmail.com</a></div>
-              </div>
-              <div className="col">
-                <h3>Find Me On...</h3>
-                <a className="social-links linkedin-profile" href="https://www.linkedin.com/in/autumncbullard" target="_blank"><span className="fab fa-linkedin fa-lg fa-fw"></span> LinkedIn</a>
-                <a className="social-links github-profile" href="https://github.com/autumnchris" target="_blank"><span className="fab fa-github fa-lg fa-fw"></span> GitHub</a>
+              <h3>Email Me At...</h3>
+              <div className="email"><span className="far fa-envelope fa-lg fa-fw"></span> <a href="mailto:autumncbullard@gmail.com" target="_self">autumncbullard@gmail.com</a></div>
+              <h3>Find Me On...</h3>
+              <div className="social-links">
+                <a className="social-link linkedin-profile" href="https://www.linkedin.com/in/autumncbullard" target="_blank"><span className="fab fa-linkedin fa-lg fa-fw"></span> LinkedIn</a>
+                <a className="social-link github-profile" href="https://github.com/autumnchris" target="_blank"><span className="fab fa-github fa-lg fa-fw"></span> GitHub</a>
               </div>
             </div>
           </section>
