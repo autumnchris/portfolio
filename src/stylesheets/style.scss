@@ -91,6 +91,11 @@ li {
   line-height: 1.45;
 }
 
+hr {
+  border: 0;
+  border-bottom: 1px solid change-color($black, $lightness: 60%);
+}
+
 a,
 a:visited,
 a:hover,
@@ -160,6 +165,11 @@ h3 {
   font-size: 1.1rem;
   line-height: 1.33;
   text-transform: uppercase;
+}
+
+h4 {
+  font-family: $heading-font;
+  margin-bottom: 8px;
 }
 
 nav {
@@ -293,6 +303,30 @@ nav {
       color: $github;
     }
   }
+  .skills {
+    margin-top: 15px;
+    .skill-group {
+      margin-top: 15px;
+      h4 {
+        color: $blue;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          display: inline;
+          font-size: 0.9rem;
+          &:after {
+            content: ' \2022 ';
+          }
+          &:last-child:after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 .portfolio .content {
@@ -324,7 +358,6 @@ nav {
       font-size: 0.9rem;
     }
     hr {
-      border: 0;
       border-bottom: 1px solid change-color($black, $lightness: 80%);
     }
     .project-links {

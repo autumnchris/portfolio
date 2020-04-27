@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Skills from './skills';
 import Projects from './projects';
 import axios from 'axios';
 import { Link, animateScroll as scroll } from 'react-scroll';
@@ -10,19 +11,37 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      portfolio: [],
+      bio: '',
+      skills: [],
+      projects: [],
       toggleClass: 'menu',
       navLinksClass: 'hidden',
-      errorStyle: {display: 'none'}
+      aboutContentStyle: {display: 'block'},
+      aboutContentErrorStyle: {display: 'none'},
+      projectsErrorStyle: {display: 'none'}
     };
   }
 
   componentDidMount() {
-    axios.get('/api/projects').then(portfolio => {
-      this.setState({ portfolio: portfolio.data });
+    axios.get('/api/about-content').then(aboutContentData => {
+      this.setState({
+        bio: aboutContentData.data.bio,
+        skills: aboutContentData.data.skills
+      });
     }).catch(() => {
       this.setState({
-        errorStyle: {display: 'block'}
+        aboutContentStyle: {display: 'none'},
+        aboutContentErrorStyle: {display: 'block'}
+      });
+    });
+
+    axios.get('/api/projects').then(projectsData => {
+      this.setState({
+        projects: projectsData.data
+      });
+    }).catch(() => {
+      this.setState({
+        projectsErrorStyle: {display: 'block'}
       });
     });
   }
@@ -79,22 +98,22 @@ export default class App extends Component {
                 </div>
               </div>
               <div className="col">
-                <p>I am a front-end web developer residing in Jacksonville Beach, Florida. I prioritize accessibility and responsiveness in my markup and design. It's my aim to keep up to date with the latest technologies while also using techniques that I know work well. Producing clean and organized code is also of high priority to me. It's not enough for me just to make something work. It's important to understand what I have made. Does it work effectively? Can I easily apply this process to a future project? Have I considered every scenario?</p>
-                <h3>Certifications:</h3>
-                <ul>
-                  <li><a href="https://www.freecodecamp.org/certification/autumnchris/front-end-libraries" target="_blank">Front End Libraries</a> from freeCodeCamp</li>
-                  <li><a href="https://www.freecodecamp.org/certification/autumnchris/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms and Data Structures</a> from freeCodeCamp</li>
-                  <li><a href="https://www.freecodecamp.org/certification/autumnchris/responsive-web-design" target="_blank">Responsive Web Design</a> from freeCodeCamp</li>
-                  <li><a href="https://www.freecodecamp.org/certification/autumnchris/data-visualization" target="_blank">Data Visualization</a> from freeCodeCamp</li>
-                  <li><a href="https://www.freecodecamp.org/certification/autumnchris/apis-and-microservices" target="_blank">APIs and Microservices</a> from freeCodeCamp</li>
-                </ul>
+                <div className="bio-and-skills" style={this.state.aboutContentStyle}>
+                  <div class="bio" dangerouslySetInnerHTML={{__html: this.state.bio}}></div>
+                  <hr/>
+                  <div className="skills">
+                    <h3>Skills</h3>
+                    <Skills skills={this.state.skills} />
+                  </div>
+                </div>
+                <p className="message error-message" style={this.state.aboutContentErrorStyle}><span className="fa fa-exclamation-circle fa-lg fa-fw"></span> Unable to load About content for Autumn Bullard at this time.</p>
               </div>
             </div>
           </section>
           <section className="portfolio" id="portfolio">
             <h2>Some of My Work</h2>
-            <Projects projects={this.state.portfolio} />
-            <p className="message error-message" style={this.state.errorStyle}><span className="fa fa-exclamation-circle fa-lg fa-fw"></span> Unable to load portfolio projects.</p>
+            <Projects projects={this.state.projects} />
+            <p className="message error-message" style={this.state.projectsErrorStyle}><span className="fa fa-exclamation-circle fa-lg fa-fw"></span> Unable to load Portfolio projects for Autumn Bullard at this time.</p>
           </section>
           <section className="contact" id="contact">
             <h2>Contact Me</h2>
