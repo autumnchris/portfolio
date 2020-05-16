@@ -1,11 +1,7 @@
 import React from 'react';
 import Framework from './framework';
 
-const ProjectItem = ({ project }) => {
-
-  const Frameworks = project.frameworks.map((framework, index) => {
-    return <Framework key={index} framework={framework} numOfFrameworks={project.frameworks.length} />;
-  });
+const Project = ({ project }) => {
 
   return (
     <div className="card">
@@ -15,9 +11,9 @@ const ProjectItem = ({ project }) => {
       </div>
       <p>{project.description}</p>
       <hr/>
-      <div className="project-links">{Frameworks}</div>
+      <div className="project-links">{project.frameworks.map((framework, index) => <Framework key={index} framework={framework} numOfFrameworks={project.frameworks.length} />)}</div>
     </div>
   );
 }
 
-export default ProjectItem;
+export default Project;

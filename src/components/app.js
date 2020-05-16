@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Skills from './skills';
-import Projects from './projects';
+import SkillGroup from './skill-group';
+import Project from './project';
 import axios from 'axios';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
@@ -103,7 +103,7 @@ export default class App extends Component {
                   <hr/>
                   <div className="skills">
                     <h3>Skills</h3>
-                    <Skills skills={this.state.skills} />
+                    <div className="skills-container">{this.state.skills.map((skillGroup, index) => <SkillGroup key={index} skillGroup={skillGroup} />)}</div>
                   </div>
                 </div>
                 <p className="message error-message" style={this.state.aboutContentErrorStyle}><span className="fa fa-exclamation-circle fa-lg fa-fw"></span> Unable to load About content for Autumn Bullard at this time.</p>
@@ -112,8 +112,10 @@ export default class App extends Component {
           </section>
           <section className="portfolio" id="portfolio">
             <h2>Some of My Work</h2>
-            <Projects projects={this.state.projects} />
-            <p className="message error-message" style={this.state.projectsErrorStyle}><span className="fa fa-exclamation-circle fa-lg fa-fw"></span> Unable to load Portfolio projects for Autumn Bullard at this time.</p>
+            <div className="content">
+              <div className="projects">{this.state.projects.map((project, index) => <Project key={index} project={project} />)}</div>
+              <p className="message error-message" style={this.state.projectsErrorStyle}><span className="fa fa-exclamation-circle fa-lg fa-fw"></span> Unable to load Portfolio projects for Autumn Bullard at this time.</p>
+            </div>
           </section>
           <section className="contact" id="contact">
             <h2>Contact Me</h2>
