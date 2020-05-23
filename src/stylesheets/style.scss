@@ -136,6 +136,14 @@ textarea:focus,
   }
 }
 
+.button-group {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .message {
   border-radius: 5px;
   line-height: 1.55;
@@ -307,7 +315,6 @@ nav {
     a:hover,
     a:active,
     a:focus {
-      display: inline-block;
       margin: 10px 0;
     }
     .linkedin-icon:hover {
