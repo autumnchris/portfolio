@@ -22,6 +22,16 @@ html {
     position: relative;
     header nav {
       background: change-color($black, $lightness: 100%);
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
       left: 0;
       position: fixed;
       right: 0;
@@ -196,14 +206,12 @@ nav {
     a:focus {
       cursor: pointer;
       display: block;
-      float: left;
       padding: 15px;
       padding-right: 7px;
       text-decoration: none;
     }
   }
   h1 {
-    float: left;
     a,
     a:visited,
     a:hover,
@@ -217,7 +225,6 @@ nav {
     }
   }
   .nav-menu {
-    float: right;
     .menu-toggle,
     .menu-toggle:hover,
     .menu-toggle:active,
@@ -225,6 +232,11 @@ nav {
       display: none;
     }
     .nav-links {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
       a:hover,
       a:focus {
         border-bottom: 2px solid $blue;
@@ -255,22 +267,16 @@ nav {
       }
       .nav-links.visible {
         background: change-color($black, $lightness: 100%);
+        display: block;
         left: 0;
         position: absolute;
         top: 45px;
         width: 100%;
-        a,
-        a:visited,
         a:hover,
-        a:active,
         a:focus {
-          float: none;
-          &:hover,
-          &:focus {
-            background: $blue;
-            border: 0;
-            color: change-color($black, $lightness: 100%);
-          }
+          background: $blue;
+          border: 0;
+          color: change-color($black, $lightness: 100%);
         }
       }
     }
