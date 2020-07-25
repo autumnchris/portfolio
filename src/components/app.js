@@ -3,8 +3,7 @@ import SkillGroup from './skill-group';
 import Project from './project';
 import axios from 'axios';
 import { Link, animateScroll as scroll } from 'react-scroll';
-
-const avatar = require('../images/avatar.jpg');
+import avatar from '../images/avatar.jpg';
 
 export default class App extends Component {
 
