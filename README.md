@@ -13,6 +13,7 @@
 * [axios](https://github.com/axios/axios)
 * AJAX
 * [Babel](https://babeljs.io)
+* [dotenv](https://github.com/motdotla/dotenv)
 * [Normalize.css](https://necolas.github.io/normalize.css)
 * [Font Awesome](https://fontawesome.com)
 * [Google Material Icons](https://material.io/icons)

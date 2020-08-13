@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const webpack = require('webpack');
+require('dotenv').config();
 const config = require('./webpack.config');
 const indexRouter = require('./routes/index');
 const apiRouter = require('./routes/api');
