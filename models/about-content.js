@@ -6,7 +6,7 @@ const AboutContentSchema = Schema({
     type: String,
     required: true
   },
-  skills: [{ type: Schema.Types.ObjectId, ref: 'SkillGroup' }]
+  skills: [{ type: Schema.Types.ObjectId, ref: 'Skill' }]
 });
 
 const AboutContent = mongoose.model('AboutContent', AboutContentSchema);

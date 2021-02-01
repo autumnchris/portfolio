@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import SkillGroup from './skill-group';
-import Project from './project';
+import React from 'react';
 import axios from 'axios';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import avatar from '../images/avatar.jpg';
+import LoadingSpinner from './loading-spinner';
+import AboutContent from './about-content';
+import Project from './project';
 
-export default class App extends Component {
+class App extends React.Component {
 
   constructor(props) {
     super(props);
@@ -15,34 +16,41 @@ export default class App extends Component {
       projects: [],
       toggleClass: 'menu',
       navLinksClass: 'hidden',
-      aboutContentStyle: {display: 'block'},
-      aboutContentErrorStyle: {display: 'none'},
-      projectsErrorStyle: {display: 'none'}
+      isAboutContentLoading: true,
+      isProjectsLoading: true,
+      aboutContentLoadingError: false,
+      projectsLoadingError: false
     };
   }
 
-  componentDidMount() {
-    axios.get('/api/about-content').then(aboutContentData => {
-      this.setState({
-        bio: aboutContentData.data.bio,
-        skills: aboutContentData.data.skills
-      });
-    }).catch(() => {
-      this.setState({
-        aboutContentStyle: {display: 'none'},
-        aboutContentErrorStyle: {display: 'block'}
-      });
-    });
+  fetchAboutContentData() {
+    return axios.get('/api/about-content');
+  }
 
-    axios.get('/api/projects').then(projectsData => {
-      this.setState({
-        projects: projectsData.data
+  fetchProjectsData() {
+    return axios.get('/api/projects');
+  }
+
+  componentDidMount() {
+    axios.all([this.fetchAboutContentData(), this.fetchProjectsData()])
+      .then(axios.spread((aboutContentData, projectsData) => {
+        this.setState({
+          bio: aboutContentData.data.bio,
+          skills: aboutContentData.data.skills,
+          projects: projectsData.data,
+          isAboutContentLoading: false,
+          isProjectsLoading: false,
+          aboutContentLoadingError: false,
+          projectsLoadingError: false
+        });
+      })).catch(() => {
+        this.setState({
+          isAboutContentLoading: false,
+          isProjectsLoading: false,
+          aboutContentLoadingError: true,
+          projectsLoadingError: true
+        });
       });
-    }).catch(() => {
-      this.setState({
-        projectsErrorStyle: {display: 'block'}
-      });
-    });
   }
 
   toggleNavIcon() {
@@ -63,7 +71,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="body">
+      <React.Fragment>
         <header>
           <nav>
             <h1 className="nav-item">
@@ -97,23 +105,16 @@ export default class App extends Component {
                 </div>
               </div>
               <div className="col">
-                <div className="bio-and-skills" style={this.state.aboutContentStyle}>
-                  <div class="bio" dangerouslySetInnerHTML={{__html: this.state.bio}}></div>
-                  <hr/>
-                  <div className="skills">
-                    <h3>Skills</h3>
-                    <div className="skills-container">{this.state.skills.map((skillGroup, index) => <SkillGroup key={index} skillGroup={skillGroup} />)}</div>
-                  </div>
-                </div>
-                <p className="message error-message" style={this.state.aboutContentErrorStyle}><span className="fa fa-exclamation-circle fa-lg fa-fw"></span> Unable to load About content for Autumn Bullard at this time.</p>
+                {this.state.isAboutContentLoading ? <LoadingSpinner /> : null}
+                {!this.state.isAboutContentLoading && !this.state.aboutContentLoadingError ? <AboutContent bio={this.state.bio} skills={this.state.skills} /> : !this.state.isAboutContentLoading && this.state.aboutContentLoadingError ? <p className="message error-message"><span className="fa fa-exclamation-circle fa-lg fa-fw"></span> Unable to load About content for Autumn Bullard at this time.</p> : null}
               </div>
             </div>
           </section>
           <section className="portfolio" id="portfolio">
             <h2>Some of My Work</h2>
             <div className="content">
-              <div className="projects">{this.state.projects.map((project, index) => <Project key={index} project={project} />)}</div>
-              <p className="message error-message" style={this.state.projectsErrorStyle}><span className="fa fa-exclamation-circle fa-lg fa-fw"></span> Unable to load Portfolio projects for Autumn Bullard at this time.</p>
+              {this.state.isProjectsLoading ? <LoadingSpinner /> : null}
+              {!this.state.isProjectsLoading && !this.state.projectsLoadingError ? <div className="projects">{this.state.projects.map(project => <Project key={project._id} project={project} />)}</div> : !this.state.isProjectsLoading && this.state.projectsLoadingError ? <p className="message error-message"><span className="fa fa-exclamation-circle fa-lg fa-fw"></span> Unable to load Portfolio projects for Autumn Bullard at this time.</p> : null}
             </div>
           </section>
           <section className="contact" id="contact">
@@ -129,7 +130,9 @@ export default class App extends Component {
             </div>
           </section>
         </main>
-      </div>
+      </React.Fragment>
     );
   }
 }
+
+export default App;

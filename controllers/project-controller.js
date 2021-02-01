@@ -2,9 +2,9 @@ const Project = require('../models/project');
 const Framework = require('../models/framework');
 
 exports.fetchProjects = (req, res, next) => {
-  Project.find({}, 'title description icon frameworks -_id').populate({
+  Project.find({}, 'title description icon frameworks').populate({
     path: 'frameworks',
-    select: 'name demo sourceCode -_id',
+    select: 'name demo sourceCode',
     options: {
       sort: {
         name: 'asc'
