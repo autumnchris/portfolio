@@ -20,7 +20,7 @@ html {
     overscroll-behavior: none;
     padding: 0 20px;
     position: relative;
-    header nav {
+    header {
       background: change-color($black, $lightness: 100%);
       display: -webkit-box;
       display: -moz-box;
@@ -171,6 +171,17 @@ textarea:focus,
 
 h1 {
   font-family: $heading-font;
+  a,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    color: change-color($black, $lightness: 20%);
+    &:focus {
+      box-shadow: none;
+      color: $blue;
+    }
+  }
 }
 
 h2 {
@@ -194,94 +205,80 @@ h4 {
   margin-bottom: 8px;
 }
 
-nav {
-  .nav-item {
-    font-family: $heading-font;
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 8px;
-    line-height: normal;
-    margin: 0;
-    text-transform: uppercase;
-    a,
-    a:visited,
+.header-item {
+  font-family: $heading-font;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+  line-height: normal;
+  margin: 0;
+  text-transform: uppercase;
+  a,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+    padding-right: 7px;
+    text-decoration: none;
+  }
+}
+
+.nav-menu {
+  .menu-toggle,
+  .menu-toggle:hover,
+  .menu-toggle:active,
+  .menu-toggle:focus {
+    display: none;
+  }
+  .nav-links {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     a:hover,
-    a:active,
     a:focus {
-      cursor: pointer;
-      display: block;
-      padding: 15px;
-      padding-right: 7px;
-      text-decoration: none;
+      border-bottom: 2px solid $blue;
+      box-shadow: none;
     }
   }
-  h1 {
-    a,
-    a:visited,
-    a:hover,
-    a:active,
-    a:focus {
-      color: change-color($black, $lightness: 20%);
-      &:focus {
-        box-shadow: none;
-        color: $blue;
-      }
-    }
-  }
-  .nav-menu {
+  @media only screen and (max-width: 760px) {
     .menu-toggle,
     .menu-toggle:hover,
     .menu-toggle:active,
     .menu-toggle:focus {
-      display: none;
-    }
-    .nav-links {
-      display: -webkit-box;
-      display: -moz-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      a:hover,
-      a:focus {
-        border-bottom: 2px solid $blue;
+      color: $blue;
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      &:focus {
+        background: change-color($black, $lightness: 90%);
+        border-radius: 5px;
         box-shadow: none;
       }
+      .menu-toggle-icon {
+        font-size: 1.8rem;
+      }
     }
-    @media only screen and (max-width: 760px) {
-      .menu-toggle,
-      .menu-toggle:hover,
-      .menu-toggle:active,
-      .menu-toggle:focus {
-        color: $blue;
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        &:focus {
-          background: change-color($black, $lightness: 90%);
-          border-radius: 5px;
-          box-shadow: none;
-        }
-        .menu-toggle-icon {
-          font-size: 1.8rem;
-        }
-      }
-      .nav-links.hidden {
-        display: none;
-      }
-      .nav-links.visible {
-        background: change-color($black, $lightness: 100%);
-        display: block;
-        left: 0;
-        position: absolute;
-        top: 45px;
-        width: 100%;
-        a:hover,
-        a:focus {
-          background: $blue;
-          border: 0;
-          color: change-color($black, $lightness: 100%);
-        }
+    .nav-links.hidden {
+      display: none;
+    }
+    .nav-links.visible {
+      background: change-color($black, $lightness: 100%);
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 45px;
+      width: 100%;
+      a:hover,
+      a:focus {
+        background: $blue;
+        border: 0;
+        color: change-color($black, $lightness: 100%);
       }
     }
   }

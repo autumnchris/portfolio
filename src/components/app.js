@@ -73,19 +73,17 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <header>
-          <nav>
-            <h1 className="nav-item">
-              <a onClick={scroll.scrollToTop} tabindex="0">Autumn Bullard</a>
-            </h1>
-            <div className="nav-item nav-menu">
-              <button type="button" className="button menu-toggle" onClick={() => this.toggleNavIcon()}>
-                <span className="material-icons menu-toggle-icon">{this.state.toggleClass}</span>
-              </button>
-              <div className={`nav-links ${this.state.navLinksClass}`}>
-                <Link to="about" smooth duration={1000} tabindex="0">About</Link>
-                <Link to="portfolio" smooth duration={1000} tabindex="0">Portfolio</Link>
-                <Link to="contact" smooth duration={1000} tabindex="0">Contact</Link>
-              </div>
+          <h1 className="header-item">
+            <a onClick={scroll.scrollToTop} tabindex="0">Autumn Bullard</a>
+          </h1>
+          <nav className="header-item nav-menu">
+            <button type="button" className="button menu-toggle" onClick={() => this.toggleNavIcon()}>
+              <span className="material-icons menu-toggle-icon">{this.state.toggleClass}</span>
+            </button>
+            <div className={`nav-links ${this.state.navLinksClass}`}>
+              <Link to="about" smooth duration={1000} tabindex="0">About</Link>
+              <Link to="portfolio" smooth duration={1000} tabindex="0">Portfolio</Link>
+              <Link to="contact" smooth duration={1000} tabindex="0">Contact</Link>
             </div>
           </nav>
         </header>
