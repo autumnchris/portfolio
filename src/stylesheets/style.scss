@@ -9,28 +9,28 @@
 
 html {
   background: transparent;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: change-color($black, $lightness: 20%);
   height: 100%;
   letter-spacing: 1px;
   body {
     background: change-color($black, $lightness: 90%);
+    background: -webkit-gradient(linear, left top, right top, from(change-color($black, $lightness: 90%)), to(change-color($black, $lightness: 95%))) fixed;
+    background: -o-linear-gradient(left, change-color($black, $lightness: 90%), change-color($black, $lightness: 95%)) fixed;
     background: linear-gradient(to right, change-color($black, $lightness: 90%), change-color($black, $lightness: 95%)) fixed;
     min-height: 100%;
+    -ms-scroll-chaining: none;
     overscroll-behavior: none;
     padding: 0 20px;
     position: relative;
     header {
       background: change-color($black, $lightness: 100%);
       display: -webkit-box;
-      display: -moz-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
-      -moz-box-pack: justify;
       -ms-flex-pack: justify;
-      -webkit-justify-content: space-between;
       justify-content: space-between;
       left: 0;
       position: fixed;
@@ -64,6 +64,7 @@ html {
     h4,
     h5,
     h6 {
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       margin-top: 0;
     }
@@ -87,6 +88,7 @@ button,
 button:hover,
 button:active,
 button:focus {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -125,6 +127,7 @@ input:focus,
 select:focus,
 textarea:focus,
 [tabindex]:focus {
+  -webkit-box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
   box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
   outline: none;
 }
@@ -148,8 +151,6 @@ textarea:focus,
 
 .button-group {
   display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -178,6 +179,7 @@ h1 {
   a:focus {
     color: change-color($black, $lightness: 20%);
     &:focus {
+      -webkit-box-shadow: none;
       box-shadow: none;
       color: $blue;
     }
@@ -238,6 +240,7 @@ h4 {
     &:focus {
       background: change-color($black, $lightness: 90%);
       border-radius: 5px;
+      -webkit-box-shadow: none;
       box-shadow: none;
     }
     .menu-toggle-icon {
@@ -257,6 +260,7 @@ h4 {
     a:hover,
     a:focus {
       background: $blue;
+      -webkit-box-shadow: none;
       box-shadow: none;
       color: change-color($black, $lightness: 100%);
     }
@@ -272,8 +276,6 @@ h4 {
     .nav-links.visible {
       background: transparent;
       display: -webkit-box;
-      display: -moz-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       left: auto;
@@ -291,34 +293,33 @@ h4 {
 }
 
 .about .content {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 90%;
   grid-template-columns: 90%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   margin: 0 auto;
   max-width: 1000px;
   @media all and (min-width: 760px) {
+    -ms-grid-columns: 30% 60%;
     grid-template-columns: 30% 60%;
   }
   .col:first-child {
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
     display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
-    -moz-box-direction: normal;
-    -moz-box-orient: vertical;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     .avatar {
       border-radius: 50%;
+      -webkit-box-shadow: 1px 1px 10px change-color($black, $lightness: 60%);
       box-shadow: 1px 1px 10px change-color($black, $lightness: 60%);
       max-width: 200px;
       width: 100%;
@@ -364,20 +365,27 @@ h4 {
 }
 
 .portfolio .content .projects {
+  display: -ms-grid;
   display: grid;
   grid-gap: 30px;
+  -ms-grid-columns: 90%;
   grid-template-columns: 90%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
   max-width: 1200px;
   @media all and (min-width: 720px) {
+    -ms-grid-columns: 45% 30px 45%;
     grid-template-columns: 45% 45%;
   }
   @media all and (min-width: 1050px) {
+    -ms-grid-columns: 30% 30px 30% 30px 30%;
     grid-template-columns: 30% 30% 30%;
   }
   .card {
     background: change-color($black, $lightness: 100%);
+    -webkit-box-shadow: 1px 1px 20px change-color($black, $lightness: 80%);
     box-shadow: 1px 1px 20px change-color($black, $lightness: 80%);
     padding: 20px;
     h3 {
@@ -445,6 +453,7 @@ h4 {
     text-decoration: none;
     width: 200px;
     &:hover {
+      -webkit-box-shadow: 1px 1px 6px change-color($black, $lightness: 60%);
       box-shadow: 1px 1px 6px change-color($black, $lightness: 60%);
     }
   }
@@ -457,6 +466,7 @@ h4 {
 }
 
 .loading-spinner {
+  -webkit-animation: spin 0.75s linear infinite;
   animation: spin 0.75s linear infinite;
   border: 4px solid $blue;
   border-top: 4px solid transparent;
@@ -485,6 +495,8 @@ noscript .info-message {
   position: absolute;
   text-align: center;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -494,11 +506,24 @@ noscript .info-message {
   text-align: center;
 }
 
+@-webkit-keyframes spin {
+0% {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+100% {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+}
+
 @keyframes spin {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
