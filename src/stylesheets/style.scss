@@ -231,54 +231,60 @@ h4 {
   .menu-toggle:hover,
   .menu-toggle:active,
   .menu-toggle:focus {
-    display: none;
-  }
-  .nav-links {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    a:hover,
-    a:focus {
-      border-bottom: 2px solid $blue;
+    color: $blue;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    &:focus {
+      background: change-color($black, $lightness: 90%);
+      border-radius: 5px;
       box-shadow: none;
     }
+    .menu-toggle-icon {
+      font-size: 1.8rem;
+    }
   }
-  @media only screen and (max-width: 760px) {
+  .nav-links.hidden {
+    display: none;
+  }
+  .nav-links.visible {
+    background: change-color($black, $lightness: 100%);
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    a:hover,
+    a:focus {
+      background: $blue;
+      box-shadow: none;
+      color: change-color($black, $lightness: 100%);
+    }
+  }
+  @media all and (min-width: 760px) {
     .menu-toggle,
     .menu-toggle:hover,
     .menu-toggle:active,
     .menu-toggle:focus {
-      color: $blue;
-      display: block;
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      &:focus {
-        background: change-color($black, $lightness: 90%);
-        border-radius: 5px;
-        box-shadow: none;
-      }
-      .menu-toggle-icon {
-        font-size: 1.8rem;
-      }
-    }
-    .nav-links.hidden {
       display: none;
     }
+    .nav-links.hidden,
     .nav-links.visible {
-      background: change-color($black, $lightness: 100%);
-      display: block;
-      left: 0;
-      position: absolute;
-      top: 45px;
-      width: 100%;
+      background: transparent;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      left: auto;
+      position: static;
+      top: auto;
+      width: auto;
       a:hover,
       a:focus {
-        background: $blue;
-        border: 0;
-        color: change-color($black, $lightness: 100%);
+        background: transparent;
+        border-bottom: 2px solid $blue;
+        color: $blue;
       }
     }
   }
@@ -290,7 +296,7 @@ h4 {
   justify-content: space-evenly;
   margin: 0 auto;
   max-width: 1000px;
-  @media only screen and (min-width: 760px) {
+  @media all and (min-width: 760px) {
     grid-template-columns: 30% 60%;
   }
   .col:first-child {
@@ -364,10 +370,10 @@ h4 {
   justify-content: center;
   margin: 0 auto;
   max-width: 1200px;
-  @media only screen and (min-width: 720px) {
+  @media all and (min-width: 720px) {
     grid-template-columns: 45% 45%;
   }
-  @media only screen and (min-width: 1050px) {
+  @media all and (min-width: 1050px) {
     grid-template-columns: 30% 30% 30%;
   }
   .card {
