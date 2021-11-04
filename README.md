@@ -5,15 +5,10 @@
 ## Built With
 * [React.js](https://reactjs.org)
 * [Sass](http://sass-lang.com)
-* [Express.js](https://expressjs.com)
-* [Mongoose](https://mongoosejs.com)
-* [MongoDB](https://www.mongodb.com)
 * [Webpack](https://webpack.js.org)
-* [EJS](https://ejs.co)
 * [Axios](https://axios-http.com)
 * AJAX
 * [Babel](https://babeljs.io)
-* [dotenv](https://github.com/motdotla/dotenv)
 * [Normalize.css](https://necolas.github.io/normalize.css)
 * [Font Awesome](https://fontawesome.com)
 * [Material Icons](https://fonts.google.com/icons)
@@ -23,4 +18,4 @@
 
 ## Demo
 
-View project demo at [https://autumnbullard-portfolio.herokuapp.com](https://autumnbullard-portfolio.herokuapp.com).
+View project demo at [https://autumnchris.github.io/portfolio](https://autumnchris.github.io/portfolio).
