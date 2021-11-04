@@ -81,7 +81,7 @@ const App = () => {
           </div>
         </section>
         </main>
-      <footer>Created by <a href="/" target="_self">Autumn Bullard</a> &copy; {new Date().getFullYear()}</footer>
+      <footer>Created by <a href="https://autumnchris.github.io/portfolio" target="_self">Autumn Bullard</a> &copy; {new Date().getFullYear()}</footer>
     </React.Fragment>
   );
 }
