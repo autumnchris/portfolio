@@ -1,0 +1,325 @@
+// STYLES FOR PAGE'S MAIN CONTENT
+
+// Button styles
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button,
+.button:visited,
+.button:hover,
+.button:active,
+.button:focus {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  line-height: normal;
+  padding: 0;
+  width: auto;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Navbar styles
+.header-item {
+  font-family: $heading-font;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+  line-height: normal;
+  margin: 0;
+  text-transform: uppercase;
+  a,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+    padding-right: 7px;
+    text-decoration: none;
+  }
+}
+
+.nav-menu {
+  .menu-toggle,
+  .menu-toggle:hover,
+  .menu-toggle:active,
+  .menu-toggle:focus {
+    color: $blue;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    &:focus {
+      background: change-color($black, $lightness: 90%);
+      border-radius: 5px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    .menu-toggle-icon {
+      font-size: 1.8rem;
+    }
+  }
+  .nav-links.hidden {
+    display: none;
+  }
+  .nav-links.visible {
+    background: change-color($black, $lightness: 100%);
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    a:hover,
+    a:focus {
+      background: $blue;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: change-color($black, $lightness: 100%);
+    }
+  }
+  @media all and (min-width: 760px) {
+    .menu-toggle,
+    .menu-toggle:hover,
+    .menu-toggle:active,
+    .menu-toggle:focus {
+      display: none;
+    }
+    .nav-links.hidden,
+    .nav-links.visible {
+      background: transparent;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      left: auto;
+      position: static;
+      top: auto;
+      width: auto;
+      a:hover,
+      a:focus {
+        background: transparent;
+        border-bottom: 2px solid $blue;
+        color: $blue;
+      }
+    }
+  }
+}
+
+// About section styles
+.about .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90%;
+  grid-template-columns: 90%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1000px;
+  @media all and (min-width: 760px) {
+    -ms-grid-columns: 30% 60%;
+    grid-template-columns: 30% 60%;
+  }
+  .col:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    .avatar {
+      border-radius: 50%;
+      -webkit-box-shadow: 1px 1px 10px change-color($black, $lightness: 60%);
+      box-shadow: 1px 1px 10px change-color($black, $lightness: 60%);
+      max-width: 200px;
+      width: 100%;
+    }
+    a,
+    a:visited,
+    a:hover,
+    a:active,
+    a:focus {
+      margin: 10px 0;
+    }
+    .linkedin-icon:hover {
+      color: $linkedin;
+    }
+    .github-icon:hover {
+      color: $github;
+    }
+  }
+  .skills {
+    margin-top: 15px;
+    .skill-group {
+      margin-top: 15px;
+      h4 {
+        color: $blue;
+      }
+      ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          font-size: 0.9rem;
+          &:after {
+            content: '\00a0\2022\00a0';
+          }
+          &:last-child:after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Portfolio section styles
+.portfolio .content .projects {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: 90%;
+  grid-template-columns: 90%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  @media all and (min-width: 720px) {
+    -ms-grid-columns: 45% 30px 45%;
+    grid-template-columns: 45% 45%;
+  }
+  @media all and (min-width: 1050px) {
+    -ms-grid-columns: 30% 30px 30% 30px 30%;
+    grid-template-columns: 30% 30% 30%;
+  }
+  .card {
+    background: change-color($black, $lightness: 100%);
+    -webkit-box-shadow: 1px 1px 20px change-color($black, $lightness: 80%);
+    box-shadow: 1px 1px 20px change-color($black, $lightness: 80%);
+    padding: 20px;
+    h3 {
+      text-align: center;
+    }
+    .project-icon {
+      color: $blue;
+      font-size: 4.5rem;
+      text-align: center;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    hr {
+      border-bottom: 1px solid change-color($black, $lightness: 80%);
+    }
+    .project-links {
+      margin-top: 15px;
+      .framework {
+        margin-bottom: 12px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .project-link-icon {
+          vertical-align: middle;
+        }
+        .project-link {
+          line-height: 1.4;
+          a,
+          a:visited,
+          a:hover,
+          a:active,
+          a:focus {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Contact section styles
+.contact .content {
+  margin: 0 auto;
+  max-width: 300px;
+  a,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    font-weight: 600;
+  }
+  .email {
+    margin-bottom: 40px;
+  }
+  .social-link,
+  .social-link:visited,
+  .social-link:hover,
+  .social-link:active,
+  .social-link:focus {
+    border-radius: 3px;
+    color: change-color($black, $lightness: 100%);
+    display: block;
+    margin-bottom: 14px;
+    padding: 12px;
+    text-decoration: none;
+    width: 220px;
+    &:hover {
+      -webkit-box-shadow: 1px 1px 6px change-color($black, $lightness: 60%);
+      box-shadow: 1px 1px 6px change-color($black, $lightness: 60%);
+    }
+  }
+  .linkedin-profile {
+    background: $linkedin;
+  }
+  .github-profile {
+    background: $github;
+  }
+}
+
+// Loading spinner styles
+.loading-spinner {
+  -webkit-animation: spin 0.75s linear infinite;
+  animation: spin 0.75s linear infinite;
+  border: 4px solid $blue;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  height: 30px;
+  margin: 50px auto;
+  width: 30px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
