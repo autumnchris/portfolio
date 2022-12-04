@@ -7,7 +7,7 @@ const Project = ({ project }) => {
     <div className="card">
       <h3>{project.title}</h3>
       <div className="project-icon">
-        <span className={`${project.icon} fa-fw`}></span>
+        <span className={`${project.icon} fa-fw`} aria-hidden="true"></span>
       </div>
       <p>{project.description}</p>
       <hr/>

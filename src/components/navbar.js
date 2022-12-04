@@ -23,7 +23,7 @@ const Navbar = (props) => {
         <a onClick={scroll.scrollToTop} tabIndex="0">Autumn Bullard</a>
       </h1>
       <nav className="header-item nav-menu">
-        <button type="button" className="button menu-toggle" onClick={() => toggleNavIcon()}>
+        <button type="button" className="button menu-toggle" onClick={() => toggleNavIcon()} aria-label="Dropdown toggle">
           <span className="material-icons menu-toggle-icon">{toggleClass}</span>
         </button>
         <div className={`nav-links ${navLinksClass}`}>
