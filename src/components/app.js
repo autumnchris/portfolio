@@ -32,11 +32,11 @@ const App = () => {
   }, []);
 
   function fetchAboutContentData() {
-    return axios.get('https://autumn-bullard-portfolio-api.herokuapp.com/api/about-content');
+    return axios.get('https://autumnchris-portfolio-api.onrender.com/api/about-content');
   }
 
   function fetchProjectsData() {
-    return axios.get('https://autumn-bullard-portfolio-api.herokuapp.com/api/projects');
+    return axios.get('https://autumnchris-portfolio-api.onrender.com/api/projects');
   }
 
   return (
