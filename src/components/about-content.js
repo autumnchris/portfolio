@@ -1,6 +1,6 @@
 import React from 'react';
-import ErrorMessage from './error-message';
-import Skill from './skill';
+import ErrorMessage from './Error-Message';
+import Skill from './Skill';
 
 const AboutContent = ({ aboutContent }) => {
 

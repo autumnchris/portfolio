@@ -1,5 +1,5 @@
 import React from 'react';
-import Framework from './framework';
+import Framework from './Framework';
 
 const Project = ({ project }) => {
 

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import avatar from '../images/avatar.jpg';
-import Navbar from './navbar';
-import LoadingSpinner from './loading-spinner';
-import AboutContent from './about-content';
-import Project from './project';
-import ErrorMessage from './error-message';
+import Navbar from './Navbar';
+import LoadingSpinner from './Loading-Spinner';
+import AboutContent from './About-Content';
+import Project from './Project';
+import ErrorMessage from './Error-Message';
 
 const App = () => {
   const [aboutContent, setAboutContent] = useState(null);
