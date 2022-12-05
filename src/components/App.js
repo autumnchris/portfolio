@@ -14,21 +14,26 @@ const App = () => {
   const [projectsLoadingStatus, setProjectsLoadingStatus] = useState(true);
 
   useEffect(() => {
-    axios.all([fetchAboutContentData(), fetchProjectsData()])
-      .then(axios.spread((aboutContentResponse, projectsResponse) => {
-        setAboutContent({
-          bio: aboutContentResponse.data.bio,
-          skills: aboutContentResponse.data.skills
-        });
-        setProjects(projectsResponse.data);
-        setAboutContentLoadingStatus(false);
-        setProjectsLoadingStatus(false);
-      })).catch(() => {
-        setAboutContent(null);
-        setProjects([]);
-        setAboutContentLoadingStatus(false);
-        setProjectsLoadingStatus(false);
+    Promise.all([
+      fetchAboutContentData(),
+      fetchProjectsData()
+    ]).then(([
+      aboutContentResponse,
+      projectsResponse
+    ]) => {
+      setAboutContent({
+        bio: aboutContentResponse.data.bio,
+        skills: aboutContentResponse.data.skills
       });
+      setProjects(projectsResponse.data);
+      setAboutContentLoadingStatus(false);
+      setProjectsLoadingStatus(false);
+    }).catch(() => {
+      setAboutContent(null);
+      setProjects([]);
+      setAboutContentLoadingStatus(false);
+      setProjectsLoadingStatus(false);
+    });
   }, []);
 
   function fetchAboutContentData() {
