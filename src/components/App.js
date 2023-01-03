@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import avatar from '../images/avatar.jpg';
 import Navbar from './Navbar';
-import LoadingSpinner from './Loading-Spinner';
-import AboutContent from './About-Content';
+import LoadingSpinner from './LoadingSpinner';
+import AboutContent from './AboutContent';
 import Project from './Project';
-import ErrorMessage from './Error-Message';
+import ErrorMessage from './ErrorMessage';
 
 const App = () => {
   const [aboutContent, setAboutContent] = useState(null);
