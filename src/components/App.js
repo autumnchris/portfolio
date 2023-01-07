@@ -10,8 +10,7 @@ import ErrorMessage from './ErrorMessage';
 const App = () => {
   const [aboutContent, setAboutContent] = useState(null);
   const [projects, setProjects] = useState([]);
-  const [aboutContentLoadingStatus, setAboutContentLoadingStatus] = useState(true);
-  const [projectsLoadingStatus, setProjectsLoadingStatus] = useState(true);
+  const [loadingStatus, setLoadingStatus] = useState(true);
 
   useEffect(() => {
     Promise.all([
@@ -26,13 +25,11 @@ const App = () => {
         skills: aboutContentResponse.data.skills
       });
       setProjects(projectsResponse.data);
-      setAboutContentLoadingStatus(false);
-      setProjectsLoadingStatus(false);
+      setLoadingStatus(false);
     }).catch(() => {
       setAboutContent(null);
       setProjects([]);
-      setAboutContentLoadingStatus(false);
-      setProjectsLoadingStatus(false);
+      setLoadingStatus(false);
     });
   }, []);
 
@@ -63,14 +60,14 @@ const App = () => {
               </div>
             </div>
             <div className="col">
-              {aboutContentLoadingStatus ? <LoadingSpinner /> : <AboutContent aboutContent={aboutContent} />}
+              {loadingStatus && !aboutContent ? <LoadingSpinner /> : aboutContent ? <AboutContent aboutContent={aboutContent} /> : <ErrorMessage errorMessage="Unable to load About content for Autumn Bullard at this time." />}
             </div>
           </div>
         </section>
         <section className="portfolio" id="portfolio">
           <h2>Some of My Work</h2>
           <div className="content">
-            {projectsLoadingStatus ? <LoadingSpinner /> : projects.length !== 0 ? <div className="projects">{projects.map(project => <Project key={project._id} project={project} />)}</div> : <ErrorMessage errorMessage="Unable to load Portfolio projects for Autumn Bullard at this time." />}
+            {loadingStatus && projects.length === 0 ? <LoadingSpinner /> : projects.length !== 0 ? <div className="projects">{projects.map(project => <Project key={project._id} project={project} />)}</div> : <ErrorMessage errorMessage="Unable to load Portfolio projects for Autumn Bullard at this time." />}
           </div>
         </section>
         <section className="contact" id="contact">
