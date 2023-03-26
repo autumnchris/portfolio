@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import avatar from '../images/avatar.jpg';
+import avatar from '../assets/images/avatar.jpg';
 import Navbar from './Navbar';
 import LoadingSpinner from './LoadingSpinner';
 import AboutContent from './AboutContent';
