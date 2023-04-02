@@ -1,46 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 import avatar from '../assets/images/avatar.jpg';
 import Navbar from './Navbar';
-import LoadingSpinner from './LoadingSpinner';
 import AboutContent from './AboutContent';
 import Project from './Project';
-import ErrorMessage from './ErrorMessage';
+import projects from '../data/projects';
 
 const App = () => {
-  const [aboutContent, setAboutContent] = useState(null);
-  const [projects, setProjects] = useState([]);
-  const [loadingStatus, setLoadingStatus] = useState(true);
-
-  useEffect(() => {
-    Promise.all([
-      fetchAboutContentData(),
-      fetchProjectsData()
-    ]).then(([
-      aboutContentResponse,
-      projectsResponse
-    ]) => {
-      setAboutContent({
-        bio: aboutContentResponse.data.bio,
-        skills: aboutContentResponse.data.skills
-      });
-      setProjects(projectsResponse.data);
-      setLoadingStatus(false);
-    }).catch(() => {
-      setAboutContent(null);
-      setProjects([]);
-      setLoadingStatus(false);
-    });
-  }, []);
-
-  function fetchAboutContentData() {
-    return axios.get('https://autumnchris-portfolio-api.onrender.com/api/about-content');
-  }
-
-  function fetchProjectsData() {
-    return axios.get('https://autumnchris-portfolio-api.onrender.com/api/projects');
-  }
-
   return (
     <React.Fragment>
       <Navbar />
@@ -60,14 +25,14 @@ const App = () => {
               </div>
             </div>
             <div className="col">
-              {loadingStatus && !aboutContent ? <LoadingSpinner /> : aboutContent ? <AboutContent aboutContent={aboutContent} /> : <ErrorMessage errorMessage="Unable to load About content for Autumn Bullard at this time." />}
+              <AboutContent />
             </div>
           </div>
         </section>
         <section className="portfolio" id="portfolio">
           <h2>Some of My Work</h2>
           <div className="content">
-            {loadingStatus && projects.length === 0 ? <LoadingSpinner /> : projects.length !== 0 ? <div className="projects">{projects.map(project => <Project key={project._id} project={project} />)}</div> : <ErrorMessage errorMessage="Unable to load Portfolio projects for Autumn Bullard at this time." />}
+            <div className="projects">{projects.sort((a, b) => b.lastUpdated - a.lastUpdated).map(project => <Project key={project.id} project={project} />)}</div>
           </div>
         </section>
         <section className="contact" id="contact">

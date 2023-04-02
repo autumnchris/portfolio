@@ -166,12 +166,6 @@ hr {
   text-align: center;
 }
 
-.error-message {
-  background: change-color($error-red, $lightness: 95%);
-  border: 1px solid change-color($error-red, $lightness: 90%);
-  color: $error-red;
-}
-
 .info-message {
   background: change-color($info-blue, $lightness: 95%);
   border: 1px solid change-color($info-blue, $lightness: 90%);
