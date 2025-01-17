@@ -6,7 +6,9 @@ const Contact = () => {
       <h2>Contact Me</h2>
       <div className="content">
         <h3>Email Me At...</h3>
-        <div className="email"><span className="far fa-envelope fa-lg fa-fw" aria-hidden="true"></span> <a href="mailto:autumncbullard@gmail.com" target="_self">autumncbullard@gmail.com</a></div>
+        <div className="email"><span className="far fa-envelope fa-lg fa-fw" aria-hidden="true"></span> <address>
+          <a href="mailto:autumncbullard@gmail.com" target="_self">autumncbullard@gmail.com</a>
+        </address></div>
         <h3>Find Me On...</h3>
         <div className="social-links">
           <a className="social-link linkedin-profile" href="https://www.linkedin.com/in/autumncbullard" target="_blank"><span className="fab fa-linkedin fa-lg fa-fw" aria-hidden="true"></span> LinkedIn</a>

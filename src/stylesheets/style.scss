@@ -146,6 +146,11 @@ hr {
   border-bottom: 1px solid change-color($black, $lightness: 60%);
 }
 
+address {
+  display: inline;
+  font-style: normal;
+}
+
 .material-icons {
   vertical-align: middle;
 }
