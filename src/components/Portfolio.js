@@ -7,7 +7,7 @@ const Portfolio = () => {
     <section className="portfolio" id="portfolio">
       <h2>Some of My Work</h2>
       <div className="content">
-        <div className="projects">{projects.sort((a, b) => b.lastUpdated - a.lastUpdated).map(project => <Project key={project.id} project={project} />)}</div>
+        <div className="projects">{projects.sort((a, b) => b.startDate - a.startDate).map(project => <Project key={project.id} project={project} />)}</div>
       </div>
     </section>
   );

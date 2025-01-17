@@ -15,8 +15,8 @@ const Skills = () => {
         <ul>{skills.filter(skill => skill.type === 'Development').map(devSkill => <Skill key={devSkill.id} skill={devSkill} />)}</ul>
       </div>
       <div className="skill-group">
-        <h4>Soft Skills</h4>
-        <ul>{skills.filter(skill => skill.type === 'Soft Skills').map(softSkill => <Skill key={softSkill.id} skill={softSkill} />)}</ul>
+        <h4>Other Skills</h4>
+        <ul>{skills.filter(skill => skill.type === 'Other Skills').map(softSkill => <Skill key={softSkill.id} skill={softSkill} />)}</ul>
       </div>
     </div>
   );

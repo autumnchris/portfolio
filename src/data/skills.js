@@ -46,52 +46,52 @@ const skills = [
   },
   {
     id: 10,
-    name: 'WordPress',
-    type: 'Technologies'
-  },
-  {
-    id: 11,
-    name: 'PHP',
-    type: 'Technologies'
-  },
-  {
-    id: 12,
     name: 'D3.js',
     type: 'Technologies'
   },
   {
-    id: 13,
+    id: 11,
     name: 'Webpack',
     type: 'Technologies'
   },
   {
-    id: 14,
+    id: 12,
     name: 'Bootstrap',
     type: 'Technologies'
   },
   {
-    id: 15,
+    id: 13,
+    name: 'Adobe Photoshop',
+    type: 'Technologies'
+  },
+  {
+    id: 14,
     name: 'Front-End Web Development',
     type: 'Development'
   },
   {
-    id: 16,
+    id: 15,
     name: 'Responsive Web Design',
     type: 'Development'
   },
   {
-    id: 17,
+    id: 16,
     name: 'Web Accessibility',
     type: 'Development'
   },
   {
-    id: 18,
+    id: 17,
     name: 'UI/UX',
     type: 'Development'
   },
   {
+    id: 18,
+    name: 'AJAX',
+    type: 'Development'
+  },
+  {
     id: 19,
-    name: 'WordPress Theme Development',
+    name: 'REST APIs',
     type: 'Development'
   },
   {
@@ -116,28 +116,48 @@ const skills = [
   },
   {
     id: 24,
-    name: 'Organizational Skills',
-    type: 'Soft Skills'
+    name: 'Unit Testing',
+    type: 'Development'
   },
   {
     id: 25,
-    name: 'Critical Thinking',
-    type: 'Soft Skills'
+    name: 'Organizational Skills',
+    type: 'Other Skills'
   },
   {
     id: 26,
-    name: 'Problem Solving',
-    type: 'Soft Skills'
+    name: 'Critical Thinking',
+    type: 'Other Skills'
   },
   {
     id: 27,
-    name: 'Self-Management',
-    type: 'Soft Skills'
+    name: 'Problem Solving',
+    type: 'Other Skills'
   },
   {
     id: 28,
+    name: 'Writing',
+    type: 'Other Skills'
+  },
+  {
+    id: 29,
+    name: 'Design',
+    type: 'Other Skills'
+  },
+  {
+    id: 30,
+    name: 'Drawing',
+    type: 'Other Skills'
+  },
+  {
+    id: 31,
+    name: 'Self-Management',
+    type: 'Other Skills'
+  },
+  {
+    id: 32,
     name: 'Creativity',
-    type: 'Soft Skills'
+    type: 'Other Skills'
   }
 ];
 
