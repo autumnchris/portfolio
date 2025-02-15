@@ -49,9 +49,20 @@
   .menu-toggle:active,
   .menu-toggle:focus {
     color: $blue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 10px;
+    width: 30px;
     &:focus {
       background: change-color($black, $lightness: 90%);
       border-radius: 5px;
@@ -59,7 +70,8 @@
       box-shadow: none;
     }
     .menu-toggle-icon {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
+      pointer-events: none;
     }
   }
   .nav-links.hidden {

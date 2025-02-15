@@ -11,10 +11,10 @@ const About = () => {
           <img src={avatar} className="avatar" alt="photo of Autumn Bullard" />
           <div className="button-group social-icons">
             <a href="https://www.linkedin.com/in/autumncbullard" target="_blank" className="button linkedin-icon" title="LinkedIn" aria-label="LinkedIn profile">
-              <span className="fab fa-linkedin fa-3x fa-fw"></span>
+              <span className="fa-brands fa-linkedin fa-3x fa-fw"></span>
             </a>
             <a href="https://github.com/autumnchris" target="_blank" className="button github-icon" title="GitHub" aria-label="GitHub profile">
-              <span className="fab fa-github fa-3x fa-fw"></span>
+              <span className="fa-brands fa-github fa-3x fa-fw"></span>
             </a>
           </div>
         </div>

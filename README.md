@@ -13,7 +13,6 @@
 * [Babel](https://babeljs.io)
 * [Normalize.css](https://necolas.github.io/normalize.css)
 * [Font Awesome](https://fontawesome.com)
-* [Material Icons](https://fonts.google.com/icons)
 * [react-scroll](https://github.com/fisshy/react-scroll)
 * [Google Fonts](https://fonts.google.com)
 * [Esphimere font](https://www.dafont.com/esphimere.font)

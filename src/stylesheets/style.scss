@@ -1,4 +1,9 @@
 @font-face {
+  font-family: Armata;
+  src: url(.././assets/fonts/Armata-Regular.ttf);
+}
+
+@font-face {
   font-family: Esphimere;
   src: url(.././assets/fonts/Esphimere.otf);
 }
@@ -149,10 +154,6 @@ hr {
 address {
   display: inline;
   font-style: normal;
-}
-
-.material-icons {
-  vertical-align: middle;
 }
 
 .page-not-found-message {
