@@ -63,12 +63,6 @@
     right: 15px;
     top: 10px;
     width: 30px;
-    &:focus {
-      background: change-color($black, $lightness: 90%);
-      border-radius: 5px;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-    }
     .menu-toggle-icon {
       font-size: 1.5rem;
       pointer-events: none;
@@ -113,6 +107,8 @@
       a:focus {
         background: transparent;
         border-bottom: 2px solid $blue;
+        -webkit-box-shadow: none;
+        box-shadow: none;
         color: $blue;
       }
     }

@@ -79,10 +79,11 @@ html {
       a:active,
       a:focus {
         color: change-color($black, $lightness: 20%);
+        &:hover,
         &:focus {
+          border-bottom: 2px solid $blue;
           -webkit-box-shadow: none;
           box-shadow: none;
-          color: $blue;
         }
       }
     }

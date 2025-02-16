@@ -11,8 +11,8 @@ const Contact = () => {
         </address></div>
         <h3>Find Me On...</h3>
         <div className="social-links">
-          <a className="social-link linkedin-profile" href="https://www.linkedin.com/in/autumncbullard" target="_blank"><span className="fa-brands fa-linkedin fa-lg fa-fw" aria-hidden="true"></span> LinkedIn</a>
-          <a className="social-link github-profile" href="https://github.com/autumnchris" target="_blank"><span className="fa-brands fa-github fa-lg fa-fw" aria-hidden="true"></span> GitHub</a>
+          <a className="social-link linkedin-profile" href="https://www.linkedin.com/in/autumncbullard" target="_blank" aria-label="Autumn Bullard's LinkedIn profile"><span className="fa-brands fa-linkedin fa-lg fa-fw" aria-hidden="true"></span> LinkedIn</a>
+          <a className="social-link github-profile" href="https://github.com/autumnchris" target="_blank" aria-label="Autumn Bullard's GitHub profile"><span className="fa-brands fa-github fa-lg fa-fw" aria-hidden="true"></span> GitHub</a>
         </div>
       </div>
     </section>
