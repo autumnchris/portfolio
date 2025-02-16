@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Navbar = (props) => {
-  const [toggleClass, setToggleClass] = useState('menu');
+  const [toggleClass, setToggleClass] = useState('bars');
   const [navLinksClass, setNavLinksClass] = useState('hidden');
 
   function toggleNavIcon() {
 
-    if (toggleClass === 'menu') {
-      setToggleClass('close');
+    if (toggleClass === 'bars') {
+      setToggleClass('xmark');
       setNavLinksClass('visible');
     }
     else {
-      setToggleClass('menu');
+      setToggleClass('bars');
       setNavLinksClass('hidden');
     }
   }
@@ -24,7 +24,7 @@ const Navbar = (props) => {
       </h1>
       <nav className="header-item nav-menu">
         <button type="button" className="button menu-toggle" onClick={() => toggleNavIcon()} aria-label="Dropdown toggle">
-          <span className="material-icons menu-toggle-icon">{toggleClass}</span>
+          <span className={`fa-solid fa-${toggleClass} menu-toggle-icon`}></span>
         </button>
         <div className={`nav-links ${navLinksClass}`}>
           <Link to="about" smooth duration={1000} tabIndex="0">About</Link>
