@@ -190,7 +190,7 @@ const projects = [
         name: 'vanilla JS',
         demo: 'https://autumnchris.github.io/wikipedia-viewer-vanilla-js',
         sourceCode: 'https://github.com/autumnchris/wikipedia-viewer-vanilla-js'
-      },
+      }
     ],
     startDate: new Date('2017-07-13').getTime()
   },
@@ -203,8 +203,14 @@ const projects = [
       {
         id: 1,
         name: 'React.js',
-        demo: 'https://autumnchris-multipage-coffee-shop-site.onrender.com',
+        demo: 'https://autumnchris-coffee-shop-site-reactjs.onrender.com',
         sourceCode: 'https://github.com/autumnchris/multipage-coffee-shop-site-reactjs'
+      },
+      {
+        id: 2,
+        name: 'vanilla JS',
+        demo: 'https://autumnchris-coffee-shop-site-vanilla-js.onrender.com',
+        sourceCode: 'https://github.com/autumnchris/multipage-coffee-shop-site-vanilla-js'
       }
     ],
     startDate: new Date('2023-03-07').getTime()
